@@ -1,7 +1,7 @@
 ValueSet: ILHDPConditionCode
 Id: il-hdp-condition-code
-Title: "HDP Condition Code"
-Description: "A list of codes for conditions for HDP"
+Title: "ILHDP Condition Code"
+Description: "Description: A  list of SNOMED codes for condition to be used for Health Data Portability"
 * ^url = $vs-il-hdp-condition-code
 * ^status = #draft
 * ^experimental = false

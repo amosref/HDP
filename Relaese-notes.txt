@@ -1,0 +1,40 @@
+Realease Notes HDP-IL
+
+Package 0.2.0
+--------------
+
+1. Added the following resources:
+	StructureDefinition:
+		il-hdp-specimen-pathology 
+
+
+Package 0.1.0 - Initial Release
+-------------
+
+1. Added the following resources:
+	StructureDefinition:
+		il-hdp-care-team
+		il-hdp-condition
+		il-hdp-diagnostic-report
+		il-hdp-diagnostic-report-pathology
+		il-hdp-document-reference
+		il-hdp-location
+		il-hdp-medication
+		il-hdp-medication-administration
+		il-hdp-medication-dispense
+		il-hdp-medication-request
+		il-hdp-medication-statement
+		il-hdp-meta
+		il-hdp-observation-lab
+		il-hdp-organization
+		il-hdp-patient
+		il-hdp-practitioner
+		il-hdp-practitioner-role
+				
+	ValueSet:
+		il-hdp-diagnostic-report-information-buckets
+		il-hdp-document-reference-information-buckets
+		il-hdp-condition-code
+		il-hdp-information-buckets
+		il-hdp-observation-information-buckets
+		il-hdp-specimen-information-buckets
