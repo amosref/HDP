@@ -1,7 +1,8 @@
-ValueSet: ObservationHDPInformationBuckets
+ValueSet: ILHDPObservationHDPInformationBuckets
 Id: il-hdp-observation-information-buckets
 Title: "ILHDP Observation Information Buckets"
 Description: "A list of information baskets for meta-security in ILHDPObservation"
+* insert ConformanceMetadata
 * ^url = $vs-observation-meta
 * ^status = #draft
 * ^experimental = false
@@ -11,5 +12,4 @@ Description: "A list of information baskets for meta-security in ILHDPObservatio
 * $info-buckets#immunizations "חיסונים"
 * $info-buckets#procedures "פרוצדורות"
 * $info-buckets#pathology "פתולוגיה"
-// * $info-buckets#measurements "מדדים"  // probably will be ObservationVitalSigns
 

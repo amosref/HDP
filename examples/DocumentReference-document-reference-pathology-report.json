@@ -1,0 +1,73 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "document-reference-pathology-report",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "pathology",
+        "display": "פתולוגיה"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-document-reference"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Pathology report document reference for patient.</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/documents",
+      "value": "DOCREF-2025-0001"
+    }
+  ],
+  "author": [
+    {
+      "reference": "Practitioner/example"
+    },
+    {
+      "reference": "Organization/example"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types",
+        "code": "pathology-report",
+        "display": "Pathology Report"
+      }
+    ]
+  },
+  "relatesTo": [
+    {
+      "code": "replaces",
+      "target": {
+        "reference": "DocumentReference/example"
+      }
+    }
+  ],
+  "context": {
+    "sourcePatientInfo": {
+      "reference": "Patient/example"
+    }
+  },
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/pdf",
+        "url": "http://hospital.example.org/fhir/Binary/12345",
+        "creation": "2025-09-10T15:00:00+02:00"
+      }
+    }
+  ],
+  "status": "current",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "authenticator": {
+    "reference": "Practitioner/example"
+  },
+  "date": "2025-09-10T15:30:00+02:00"
+}

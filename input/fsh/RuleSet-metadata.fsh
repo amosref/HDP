@@ -1,6 +1,4 @@
 RuleSet: ConformanceMetadata
-* ^version = "0.16.0"
+* ^version = "0.3.2"
 * ^publisher = "Israel Core Team"
-* ^date = "2024-12-02"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+* ^date = "2025-09-04"

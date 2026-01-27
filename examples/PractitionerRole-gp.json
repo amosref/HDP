@@ -1,0 +1,55 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "gp",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "practitioner",
+        "display": "מטפל"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner-role"
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">רופאת משפחה</div>",
+    "status": "generated"
+  },
+  "identifier": [
+    {
+      "system": "http://practitioners.health.gov.il/Practitioners",
+      "value": "1-1234"
+    }
+  ],
+  "practitioner": {
+    "reference": "Practitioner/practitioner-md"
+  },
+  "location": [
+    {
+      "reference": "Location/hospital-unit"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "04-6421420",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "DG@example.com"
+    }
+  ],
+  "availableTime": [
+    {
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "17:00:00"
+    }
+  ],
+  "organization": {
+    "reference": "Organization/ministry-of-health"
+  },
+  "active": true
+}

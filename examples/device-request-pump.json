@@ -1,0 +1,44 @@
+{
+  "resourceType": "DeviceRequest",
+  "id": "hdp-device-request-pump",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "medications",
+        "display": "תרופות"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device-request"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Request for infusion pump for patient</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/device-requests",
+      "value": "DR-2025-0001"
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/example"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "priority": "routine",
+  "codeReference": {
+    "reference": "Device/example"
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "requester": {
+    "reference": "Practitioner/example"
+  },
+  "authoredOn": "2025-09-07T09:30:00+02:00"
+}

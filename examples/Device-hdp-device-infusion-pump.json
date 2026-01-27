@@ -1,0 +1,52 @@
+{
+  "resourceType": "Device",
+  "id": "hdp-device-infusion-pump",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "medications",
+        "display": "תרופות"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Device: Infusion Pump assigned to patient</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/devices",
+      "value": "DEV-2025-0001"
+    }
+  ],
+  "status": "active",
+  "distinctIdentifier": "12345-XYZ",
+  "manufacturer": "Acme Medical Devices Ltd.",
+  "modelNumber": "IP-2025",
+  "serialNumber": "SN-987654321",
+  "type": {
+    "coding": [
+      {
+        "code": "706172005",
+        "system": "http://snomed.info/sct",
+        "display": "Infusion pump (physical object)"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "owner": {
+    "reference": "Organization/example"
+  },
+  "location": {
+    "reference": "Location/example"
+  },
+  "parent": {
+    "reference": "Device/example"
+  }
+}

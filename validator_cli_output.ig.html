@@ -1,0 +1,1207 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Validation Results</title>
+  <link href="http://hl7.org/fhir/fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results</h1>
+ <p>5 errors, 98 warnings, 17 hints. Generated Dec 8, 2025, 6:04:32 PM by Validator Version 6.5.17 (Git# e11379272e66). Built 2025-03-19T04:15:30.243Z (264 days old) (32696ms)</p>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;1"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\AllergyIntolerance-aspirin-intolerance.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;2"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\CareTeam-hdp-careTeam.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;3"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Communication-communication-hdp-pathology.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;4"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Condition-burnt-ear.json</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;5"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Device-hdp-device-infusion-pump.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;6"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\DeviceRequest-device-request-pump.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;7"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\DeviceUseStatement-device-use-statement-cpap.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;8"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\DiagnosticReport-hdp-diagnostic-lab-report.json</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;9"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\DiagnosticReport-hdp-diagnostic-pathology-study.json</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;10"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\DocumentReference-document-reference-pathology-report.json</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;11"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Linkage-ILHDPLinkageExample.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;12"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Location-hospital-unit.json</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;13"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Medication-amoxicillin.json</b></a></td><td><b>1</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;14"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationAdministration-morphine.json</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;15"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationDispense-hdp-medication-dispense.json</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;16"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationRequest-metamizole.json</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;17"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationStatement-hdp-medication-statement-fluoxetine-20mg.json</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;18"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Observation-blood-glucose.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;19"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Observation-ExampleILHDPBP.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;20"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Observation-hemoglobin-lab-test.json</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;21"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Organization-ministry-of-health.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;22"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Patient-patient-with-israeli-id.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;23"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Practitioner-anesthesiologist-with-expertise.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;24"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\PractitionerRole-gp.json</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;25"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\RelatedPerson-guardian.json</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;26"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ServiceRequest-chest-xray.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;27"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Specimen-serum-patient.json</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;28"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Specimen-specimen-pathology-biopsy-1.json</b></a></td><td><b>1</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;29"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-allergy-intolerance.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;30"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-bp.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;31"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-care-team.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;32"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-communication-pathology.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;33"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-condition.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;34"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device-dispense.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;35"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device-request.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;36"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device-use-statement.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;37"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;38"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-diagnostic-report-pathology.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;39"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-diagnostic-report.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;40"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-document-reference.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;41"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-linkage.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;42"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-location.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;43"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-administration.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;44"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-dispense.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;45"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-request.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;46"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-statement.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;47"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;48"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-meta.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;49"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-observation-lab.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;50"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-observation.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;51"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-organization.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;52"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-patient.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;53"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-practitioner-linkage.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;54"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-practitioner-role.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;55"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-practitioner.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;56"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-related-person.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;57"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-service-request.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;58"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-specimen-lab.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;59"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-specimen-pathology.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;60"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-substance.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;61"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-vital-signs.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;62"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\Substance-blood-sample.json</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;63"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\SupplyDelivery-device-dispense-pump.json</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;64"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-condition-code.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;65"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-diagnostic-report-information-buckets.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;66"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-document-reference-information-buckets.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;67"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-document-types.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;68"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-information-buckets.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;69"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-observation-information-buckets.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;70"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-observation-lab-information-buckets.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;71"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-organization-types.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;72"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-service-request-information-buckets.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;73"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-specimen-information-buckets.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;74"><b>C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-substance-information-buckets.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l1"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\AllergyIntolerance-aspirin-intolerance.json">C:\FHIR\HDP\differentials\fsh-generated\resources\AllergyIntolerance-aspirin-intolerance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l2"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\CareTeam-hdp-careTeam.json">C:\FHIR\HDP\differentials\fsh-generated\resources\CareTeam-hdp-careTeam.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CareTeam.contained[0]/*Practitioner/pr1*/.name[0] (l46/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.19.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm2" class="flip" onclick="flip('m2')">Show Reasoning</span><div id="m2" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.19.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>CareTeam.contained[0]/*Practitioner/pr1*/.name[0]: discriminator = true and ('he' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li>, <li>CareTeam.contained[0]/*Practitioner/pr1*/.name[0]: discriminator = true and ('en' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li>, <li>CareTeam.contained[0]/*Practitioner/pr1*/.name[0]: discriminator = true and ('ar' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CareTeam (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l3"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Communication-communication-hdp-pathology.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Communication-communication-hdp-pathology.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Communication (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-communication-pathology#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-communication-pathology)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l4"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Condition-burnt-ear.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Condition-burnt-ear.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Condition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Condition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-condition#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-condition)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l5"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Device-hdp-device-infusion-pump.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Device-hdp-device-infusion-pump.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Device (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l6"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\DeviceRequest-device-request-pump.json">C:\FHIR\HDP\differentials\fsh-generated\resources\DeviceRequest-device-request-pump.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DeviceRequest (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device-request#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device-request)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l7"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\DeviceUseStatement-device-use-statement-cpap.json">C:\FHIR\HDP\differentials\fsh-generated\resources\DeviceUseStatement-device-use-statement-cpap.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DeviceUseStatement (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device-use-statement#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device-use-statement)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l8"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\DiagnosticReport-hdp-diagnostic-lab-report.json">C:\FHIR\HDP\differentials\fsh-generated\resources\DiagnosticReport-hdp-diagnostic-lab-report.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DiagnosticReport (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DiagnosticReport (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-diagnostic-report#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-diagnostic-report)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l9"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\DiagnosticReport-hdp-diagnostic-pathology-study.json">C:\FHIR\HDP\differentials\fsh-generated\resources\DiagnosticReport-hdp-diagnostic-pathology-study.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DiagnosticReport (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DiagnosticReport (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-diagnostic-report#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-diagnostic-report)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l10"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\DocumentReference-document-reference-pathology-report.json">C:\FHIR\HDP\differentials\fsh-generated\resources\DocumentReference-document-reference-pathology-report.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DocumentReference.type.coding[0].system (l34/c4)</b></td><td><b>warning</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>DocumentReference.type (l34/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DocumentReference.type.coding[0] (l34/c4)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DocumentReference.type (l34/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ILHDP Document Reference Types' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types|0.3.2), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DocumentReference (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-document-reference#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-document-reference)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l11"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Linkage-ILHDPLinkageExample.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Linkage-ILHDPLinkageExample.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Linkage (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l12"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Location-hospital-unit.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Location-hospital-unit.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Location (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Location (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-location#one-strong-identifier-warning"><b>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-location)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l13"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Medication-amoxicillin.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Medication-amoxicillin.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.code.coding[0].display (l29/c4)</b></td><td><b>error</b></td><td title="Display_Name_for__should_be_one_of__instead_of"><b>Wrong Display Name 'Amoxicillin 500 mg capsule' for http://snomed.info/sct#372687004. Valid display is 'Amoxicillin (substance)' (en) (for the language(s) 'en')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.code (l29/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.19.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#372687004)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.form (l38/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#420692007)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l14"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationAdministration-morphine.json">C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationAdministration-morphine.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationAdministration.category (l26/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationAdministration.dosage.site (l81/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationAdministration (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-administration#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-administration)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l15"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationDispense-hdp-medication-dispense.json">C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationDispense-hdp-medication-dispense.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.category (l28/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.dosageInstruction[0].site (l81/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.dosageInstruction[0].route (l73/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l16"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationRequest-metamizole.json">C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationRequest-metamizole.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationRequest.supportingInformation[0] (l48/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.3.2 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm34" class="flip" onclick="flip('m34')">Show Reasoning</span><div id="m34" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.3.2 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>MedicationRequest.supportingInformation[0]: discriminator = true and $this.resolve().conformsTo('http://hl7.org/fhir/StructureDefinition/bodyweight')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest.dosageInstruction[0].site (l92/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l17"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationStatement-hdp-medication-statement-fluoxetine-20mg.json">C:\FHIR\HDP\differentials\fsh-generated\resources\MedicationStatement-hdp-medication-statement-fluoxetine-20mg.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationStatement.category.coding[0].system (l41/c4)</b></td><td><b>warning</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationStatement.category (l41/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Medication usage category codes' (http://hl7.org/fhir/ValueSet/medication-statement-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationStatement.category.coding[0] (l41/c4)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationStatement.category (l41/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ILCore Medication statement Category' (http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category|0.19.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationStatement.dosage[0].site (l65/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationStatement (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-statement#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-statement)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l18"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Observation-blood-glucose.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Observation-blood-glucose.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l19"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Observation-ExampleILHDPBP.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Observation-ExampleILHDPBP.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_OBS"><b>Validate Observation against the Blood pressure systolic and diastolic profile (http://hl7.org/fhir/StructureDefinition/bp) which is required by the FHIR specification because the LOINC code 85354-9 was found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l20"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Observation-hemoglobin-lab-test.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Observation-hemoglobin-lab-test.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.category[0] (l24/c6)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#108252007)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l21"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Organization-ministry-of-health.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Organization-ministry-of-health.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-organization#one-strong-identifier-warning"><b>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-organization)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l22"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Patient-patient-with-israeli-id.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Patient-patient-with-israeli-id.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0].value.ofType(code) (l65/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#he' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l63/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.3.2 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm50" class="flip" onclick="flip('m50')">Show Reasoning</span><div id="m50" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.3.2 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient#one-strong-identifier-warning"><b>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l23"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Practitioner-anesthesiologist-with-expertise.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Practitioner-anesthesiologist-with-expertise.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0].value.ofType(code) (l37/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#he' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0] (l35/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.3.2 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm53" class="flip" onclick="flip('m53')">Show Reasoning</span><div id="m53" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.3.2 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].identifier[0] (l92/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.3.2 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm54" class="flip" onclick="flip('m54')">Show Reasoning</span><div id="m54" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.3.2 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.qualification[1].identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/practitioner-expertise' in system)</li>, <li>Practitioner.qualification[1].identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/nurse-expertise' in system)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Practitioner (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner#one-strong-identifier-warning"><b>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l24"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\PractitionerRole-gp.json">C:\FHIR\HDP\differentials\fsh-generated\resources\PractitionerRole-gp.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole.code[0].coding[0].system (l55/c6)</b></td><td><b>warning</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'http://fhir.health.gov.il/cs/practitioner-role-moh' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole.code[0].coding[0] (l55/c6)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'http://fhir.health.gov.il/cs/practitioner-role-moh' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>PractitionerRole.code[0] (l55/c6)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Practitioner role' (http://hl7.org/fhir/ValueSet/practitioner-role|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/practitioner-role-moh#1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner-role#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner-role)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l25"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\RelatedPerson-guardian.json">C:\FHIR\HDP\differentials\fsh-generated\resources\RelatedPerson-guardian.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>RelatedPerson.relationship[0] (l34/c6)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#GUARD)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>RelatedPerson (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>RelatedPerson.name[0] (l45/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-related-person|0.3.2 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm62" class="flip" onclick="flip('m62')">Show Reasoning</span><div id="m62" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-related-person|0.3.2 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>RelatedPerson.name[0]: discriminator = true and ('he' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li>, <li>RelatedPerson.name[0]: discriminator = true and ('en' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li>, <li>RelatedPerson.name[0]: discriminator = true and ('ar' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>RelatedPerson (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-related-person#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-related-person)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l26"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ServiceRequest-chest-xray.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ServiceRequest-chest-xray.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ServiceRequest (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-service-request#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-service-request)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l27"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Specimen-serum-patient.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Specimen-serum-patient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Specimen.processing[0] (l91/c6)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://fhir.health.gov.il/StructureDefinition/ext-processing-location is not allowed to be used at this point (allowed = e:Specimen; this element is [BackboneElement, Specimen.processing])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Specimen (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-lab#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-lab)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l28"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Specimen-specimen-pathology-biopsy-1.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Specimen-specimen-pathology-biopsy-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Specimen.collection.collector (l38/c6)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Specimen.processing[0] (l58/c6)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://fhir.health.gov.il/StructureDefinition/ext-processing-location is not allowed to be used at this point (allowed = e:Specimen; this element is [BackboneElement, Specimen.processing])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Specimen (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Specimen (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-pathology#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-pathology)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l29"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-allergy-intolerance.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-allergy-intolerance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l30"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-bp.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-bp.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l31"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-care-team.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-care-team.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l32"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-communication-pathology.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-communication-pathology.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l33"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-condition.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-condition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l34"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device-dispense.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device-dispense.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l35"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device-request.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device-request.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l36"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device-use-statement.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device-use-statement.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l37"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-device.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l38"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-diagnostic-report-pathology.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-diagnostic-report-pathology.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.differential.element[10]</b></td><td><b>information</b></td><td title="null"><b>The element DiagnosticReport.performer has types/profiles/targets that are marked as must support, but the element itself is not marked as must-support. The inner must-supports will be ignored unless the element inherits must-support = true</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l39"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-diagnostic-report.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-diagnostic-report.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.differential.element[9]</b></td><td><b>information</b></td><td title="null"><b>The element DiagnosticReport.performer has types/profiles/targets that are marked as must support, but the element itself is not marked as must-support. The inner must-supports will be ignored unless the element inherits must-support = true</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l40"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-document-reference.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-document-reference.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l41"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-linkage.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-linkage.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l42"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-location.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-location.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l43"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-administration.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-administration.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l44"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-dispense.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-dispense.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l45"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-request.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-request.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l46"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-statement.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication-statement.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l47"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-medication.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l48"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-meta.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-meta.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l49"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-observation-lab.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-observation-lab.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l50"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-observation.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-observation.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l51"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-organization.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-organization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l52"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-patient.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-patient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l53"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-practitioner-linkage.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-practitioner-linkage.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l54"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-practitioner-role.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-practitioner-role.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l55"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-practitioner.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-practitioner.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l56"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-related-person.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-related-person.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l57"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-service-request.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-service-request.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l58"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-specimen-lab.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-specimen-lab.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l59"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-specimen-pathology.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-specimen-pathology.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l60"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-substance.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-substance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l61"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-vital-signs.json">C:\FHIR\HDP\differentials\fsh-generated\resources\StructureDefinition-il-hdp-vital-signs.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l62"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\Substance-blood-sample.json">C:\FHIR\HDP\differentials\fsh-generated\resources\Substance-blood-sample.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Substance.code.coding[0].display (l26/c4)</b></td><td><b>error</b></td><td title="Display_Name_WS_for__should_be_one_of__instead_of"><b>Wrong whitespace in Display Name ' Blood (substance)' for http://snomed.info/sct#87612001. Valid display is 'Blood' (en) (for the language(s) 'en')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Substance.code.coding[0].display (l31/c40)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace ' Blood (substance)'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Substance (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-substance#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-substance)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l63"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\SupplyDelivery-device-dispense-pump.json">C:\FHIR\HDP\differentials\fsh-generated\resources\SupplyDelivery-device-dispense-pump.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>SupplyDelivery (l1/c2)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://fhir.health.gov.il/StructureDefinition/ext-device-dispense-when-handed-over is not allowed to be used at this point (allowed = e:ILCoreDeviceDispense; this element is [SupplyDelivery])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>SupplyDelivery (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device-dispense#one-strong-identifier"><b>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device-dispense)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l64"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-condition-code.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-condition-code.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l65"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-diagnostic-report-information-buckets.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-diagnostic-report-information-buckets.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l66"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-document-reference-information-buckets.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-document-reference-information-buckets.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l67"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-document-types.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-document-types.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l68"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-information-buckets.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-information-buckets.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l69"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-observation-information-buckets.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-observation-information-buckets.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l70"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-observation-lab-information-buckets.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-observation-lab-information-buckets.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l71"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-organization-types.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-organization-types.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l72"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-service-request-information-buckets.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-service-request-information-buckets.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l73"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-specimen-information-buckets.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-specimen-information-buckets.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l74"> </a>
+<h2><a href="file:C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-substance-information-buckets.json">C:\FHIR\HDP\differentials\fsh-generated\resources\ValueSet-il-hdp-substance-information-buckets.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>

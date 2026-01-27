@@ -3,6 +3,8 @@ Parent: ILCorePractitionerRole
 Id: il-hdp-practitioner-role
 Title: "ILHDP PractitionerRole"
 Description: "PractitionerRole profile for HDP"
+* insert ConformanceMetadata
+* . obeys one-strong-identifier
 * meta only ILHDPMeta
 * meta 1..1
 * meta.security[HDP] 1..1
@@ -12,6 +14,7 @@ Description: "PractitionerRole profile for HDP"
 * meta.security[HDP].code = #practitioner (exactly)
 * meta.security[HDP].display = "מטפל" (exactly)
 * . obeys prac-role-code-specialty
+* identifier 1..*
 * organization 1..1
 * organization only Reference(ILCoreOrganization or ILHDPOrganization)
 * practitioner only Reference(ILCorePractitioner or ILHDPPractitioner)

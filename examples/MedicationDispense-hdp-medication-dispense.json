@@ -1,0 +1,119 @@
+{
+  "resourceType": "MedicationDispense",
+  "id": "hdp-medication-dispense",
+  "meta": {
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense"
+    ],
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "medications",
+        "display": "תרופות"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-medication-recorded-time",
+      "valueDateTime": "2024-05-21T14:00:00Z"
+    }
+  ],
+  "category": {
+    "coding": [
+      {
+        "code": "community-hmo",
+        "system": "http://fhir.health.gov.il/cs/il-core-medication-request-category",
+        "display": "Community Care/HMO"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/practitioner-md"
+      }
+    }
+  ],
+  "authorizingPrescription": [
+    {
+      "reference": "MedicationRequest/metamizole-for-gangreenous-tonsolitis"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "RFP",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "display": "Refill - Part Fill"
+      }
+    ]
+  },
+  "quantity": {
+    "value": 10,
+    "unit": "Tablet",
+    "system": "http://snomed.info/sct",
+    "code": "428673006"
+  },
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unknown"
+          }
+        ]
+      },
+      "site": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unknown"
+          }
+        ]
+      },
+      "method": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unknown"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "Tablet",
+            "system": "http://snomed.info/sct",
+            "code": "428673006"
+          },
+          "rateQuantity": {
+            "value": 1,
+            "unit": "Tablet",
+            "system": "http://snomed.info/sct",
+            "code": "428673006"
+          }
+        }
+      ],
+      "sequence": 1,
+      "text": "Take one tablet daily"
+    }
+  ],
+  "status": "completed",
+  "medicationReference": {
+    "reference": "Medication/paracetamol"
+  },
+  "subject": {
+    "reference": "Patient/patient-israeli-with-statistical-area"
+  },
+  "whenHandedOver": "2024-05-21T14:30:00Z"
+}

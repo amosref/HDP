@@ -1,0 +1,36 @@
+{
+  "resourceType": "Linkage",
+  "id": "ILHDPLinkageExample",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "practitioner",
+        "display": "מטפל"
+      }
+    ],
+    "versionId": "1",
+    "lastUpdated": "2024-01-15T10:30:00Z",
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-linkage"
+    ]
+  },
+  "item": [
+    {
+      "type": "source",
+      "resource": {
+        "reference": "Practitioner/anesthesiologist-with-expertise"
+      }
+    },
+    {
+      "type": "source",
+      "resource": {
+        "reference": "Practitioner/gp"
+      }
+    }
+  ],
+  "active": true,
+  "author": {
+    "reference": "Organization/example-health-authority"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "resourceType": "Substance",
+  "id": "blood-sample",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "laboratoryTests",
+        "display": "בדיקות מעבדה"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-substance"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Blood sample substance entry with HDP meta.</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/substances",
+      "value": "SUB-2025-0002"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "119297000",
+        "display": "Blood specimen (substance)"
+      }
+    ]
+  },
+  "status": "active"
+}

@@ -3,6 +3,8 @@ Parent: ILCorePractitioner
 Id: il-hdp-practitioner
 Title: "ILHDP Practitioner"
 Description: "Practitioner profile for HDP"
+* insert ConformanceMetadata
+* . obeys one-strong-identifier-warning
 * meta only ILHDPMeta
 * meta 1..1
 * meta.security[HDP] 1..1
@@ -11,4 +13,6 @@ Description: "Practitioner profile for HDP"
 * meta.security[HDP].system = $info-buckets (exactly)
 * meta.security[HDP].code = #practitioner (exactly)
 * meta.security[HDP].display = "מטפל" (exactly)
-* . obeys prac-ident-enc
+* identifier.assigner only Reference(ILHDPOrganization or ILCoreOrganization)
+* obeys prac-ident-enc
+* name.given 1..1

@@ -1,0 +1,75 @@
+{
+  "resourceType": "Observation",
+  "id": "blood-glucose",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "laboratory",
+        "display": "מעבדה"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Blood glucose measurement: 110 mg/dL</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/observations",
+      "value": "OBS-2025-0001"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "2339-0",
+        "display": "Glucose [Mass/volume] in Blood"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/example"
+    },
+    {
+      "reference": "Organization/example"
+    }
+  ],
+  "valueQuantity": {
+    "value": 110,
+    "unit": "mg/dL",
+    "system": "http://unitsofmeasure.org",
+    "code": "mg/dL"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "encounter": {
+    "reference": "Encounter/example"
+  },
+  "effectiveDateTime": "2025-09-10T09:30:00+02:00",
+  "issued": "2025-09-10T10:00:00+02:00",
+  "specimen": {
+    "reference": "Specimen/example"
+  },
+  "device": {
+    "reference": "Device/example"
+  }
+}

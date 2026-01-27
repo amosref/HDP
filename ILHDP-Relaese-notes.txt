@@ -1,0 +1,56 @@
+Release Notes HDP-IL
+
+Package 0.2.0
+--------------
+
+1. Added the following resources:
+	StructureDefinition:
+		il-hdp-bp
+        	il-hdp-device
+        	il-hdp-device-dispense
+        	il-hdp-device-request
+        	il-hdp-dosage     
+        	il-hdp-observation
+		il-hdp-specimen-pathology
+        	il-hdp-service-request
+        	il-hdp-vital-signs
+
+2. Modified the following resources:
+	StructureDefinition:
+		il-core-observation-lab:
+			changed cardinality on 'value[x]' to 0..1
+		il-core-condition:
+			added extension "alternate reference" to 'recorder' element
+
+
+Package 0.1.0 - Initial Release
+-------------
+
+1. Added the following resources:
+	StructureDefinition:
+		il-hdp-allergy-intolerance
+		il-hdp-care-team
+		il-hdp-condition
+		il-hdp-diagnostic-report
+		il-hdp-diagnostic-report-pathology
+		il-hdp-document-reference
+		il-hdp-location
+		il-hdp-medication
+		il-hdp-medication-administration
+		il-hdp-medication-dispense
+		il-hdp-medication-request
+		il-hdp-medication-statement
+		il-hdp-meta
+		il-hdp-observation-lab
+		il-hdp-organization
+		il-hdp-patient
+		il-hdp-practitioner
+		il-hdp-practitioner-role
+				
+	ValueSet:
+		il-hdp-diagnostic-report-information-buckets
+		il-hdp-document-reference-information-buckets
+		il-hdp-condition-code
+		il-hdp-information-buckets
+		il-hdp-observation-information-buckets
+		il-hdp-specimen-information-buckets

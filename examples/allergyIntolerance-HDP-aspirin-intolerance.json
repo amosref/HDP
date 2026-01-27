@@ -1,0 +1,111 @@
+{
+    "resourceType": "AllergyIntolerance",
+    "id": "allergyIntolerance-HDP-aspirin-intolerance",
+    "meta": {
+        "security": [{
+                "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+                "code": "allergiesAndIntolerances",
+                "display": "רגישויות"
+            }
+        ],
+        "profile": [
+            "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-allergy-intolerance"
+        ]
+    },
+    "identifier": [{
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:a76d9bbf-f293-4fb7-ad4c-2851bac77162"
+        }
+    ],
+    "extension": [{
+            "url": "http://fhir.health.gov.il/StructureDefinition/ext-allergy-intolerance-end",
+            "extension": [{
+                    "url": "endDate",
+                    "valueDateTime": "2022-03-14"
+                }
+            ]
+        }
+    ],
+    "reaction": [{
+            "extension": [{
+                    "url": "http://fhir.health.gov.il/StructureDefinition/ext-reaction-duration",
+                    "valueDuration": {
+                        "value": 3,
+                        "code": "h",
+                        "system": "http://unitsofmeasure.org"
+                    }
+                }
+            ],
+            "substance": {
+                "coding": [{
+                        "code": "387458008",
+                        "system": "http://snomed.info/sct",
+                        "display": "Aspirin (substance)"
+                    }
+                ]
+            },
+            "manifestation": [{
+                    "coding": [{
+                            "code": "60862001",
+                            "system": "http://snomed.info/sct",
+                            "display": "Tinnitus (finding)"
+                        }
+                    ]
+                }
+            ],
+            "severity": "mild",
+            "exposureRoute": {
+                "coding": [{
+                        "code": "26643006",
+                        "system": "http://snomed.info/sct",
+                        "display": "Oral route (qualifier value)"
+                    }
+                ]
+            }
+        }
+    ],
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">רגישות לאספירין</div>"
+    },
+    "patient": {
+        "reference": "Patient/patient-with-israeli-id"
+    },
+    "recorder": {
+        "reference": "Practitioner/practitioner-with-encrypted-israeli-id"
+    },
+    "asserter": {
+        "reference": "Patient/patient-with-israeli-id"
+    },
+    "encounter": {
+        "reference": "Encounter/allergy-encounter"
+    },
+    "clinicalStatus": {
+        "coding": [{
+                "code": "active",
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+        ]
+    },
+    "verificationStatus": {
+        "coding": [{
+                "code": "confirmed",
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+        ]
+    },
+    "onsetDateTime": "2004",
+    "type": "intolerance",
+    "criticality": "low",
+    "code": {
+        "coding": [{
+                "code": "292044008",
+                "system": "http://snomed.info/sct",
+                "display": "Aspirin adverse reaction"
+            }
+        ]
+    },
+    "category": [
+        "medication"
+    ]
+}

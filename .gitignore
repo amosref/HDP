@@ -5,3 +5,14 @@ Thumbs.db
 /output
 /temp
 /template
+.DS_Store
+fsh-generated
+temp
+jre
+node_modules
+differentials
+publisher.jar
+input-cache
+template
+output
+validator_cli.jar

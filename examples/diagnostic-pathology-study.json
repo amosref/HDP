@@ -1,0 +1,65 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "hdp-diagnostic-pathology-study",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "pathology",
+        "display": "פתולוגיה"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-diagnostic-report"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "11526-1",
+        "system": "http://loinc.org",
+        "display": "Pathology study"
+      }
+    ],
+    "text": "Pathology study"
+  },
+  "subject": {
+    "reference": "Patient/patient-with-israeli-id",
+    "display": "תמר כהן"
+  },
+  "encounter": {
+    "reference": "Encounter/skin-biopsy",
+    "display": "Encounter with Dr. Smith"
+  },
+  "effectiveDateTime": "2024-11-05T14:30:00Z",
+  "issued": "2024-11-05T15:00:00Z",
+  "performer": [
+    {
+      "reference": "Organization/acme-labs",
+      "display": "Acme Laboratory Services"
+    },
+    {
+      "reference": "Practitioner/practitioner-md",
+      "display": "דר גרינפלד דיאנה"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/skin-biopsy-result",
+      "display": "Microscopic examination of skin biopsy"
+    }
+  ],
+  "conclusion": "The skin biopsy reveals superficial basal cell carcinoma. Margins are clear.",
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1338007",
+          "display": "Basal cell carcinoma (morphologic abnormality)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "resourceType": "SupplyDelivery",
+  "id": "hdp-device-dispense-pump",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "medications",
+        "display": "תרופות"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device-dispense"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Dispense of infusion pump to patient</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/device-dispenses",
+      "value": "DD-2025-0001"
+    }
+  ],
+  "basedOn": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/alternate-reference",
+          "valueReference": {
+            "reference": "DeviceRequest/example"
+          }
+        }
+      ],
+      "reference": "DeviceRequest/example"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-device-dispense-when-handed-over",
+      "valueDateTime": "2025-09-07T12:15:00+02:00"
+    }
+  ],
+  "suppliedItem": {
+    "quantity": {
+      "value": 1
+    },
+    "itemReference": {
+      "reference": "Device/example"
+    }
+  },
+  "receiver": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/alternate-reference",
+          "valueReference": {
+            "reference": "Patient/example"
+          }
+        }
+      ],
+      "reference": "Practitioner/example"
+    }
+  ],
+  "status": "completed",
+  "occurrenceDateTime": "2025-09-07T12:00:00+02:00",
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "supplier": {
+    "reference": "Organization/example"
+  },
+  "destination": {
+    "reference": "Location/example"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "resourceType": "Medication",
+  "id": "amoxicillin",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "medications",
+        "display": "תרופות"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Amoxicillin 500mg capsule, manufactured by Example Pharma.</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/medications",
+      "value": "MED-2025-0001",
+      "assigner": {
+        "reference": "Organization/example"
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.health.gov.il/ValueSet/il-core-medication-code",
+        "code": "123456",
+        "display": "Amoxicillin 500mg capsule"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/medication-form-codes",
+        "code": "capsule",
+        "display": "Capsule"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "strength": {
+        "numerator": {
+          "value": 500,
+          "unit": "mg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "unit": "capsule",
+          "system": "http://unitsofmeasure.org",
+          "code": "1"
+        }
+      },
+      "itemReference": {
+        "reference": "Substance/example"
+      }
+    }
+  ],
+  "status": "active",
+  "manufacturer": {
+    "reference": "Organization/example"
+  }
+}

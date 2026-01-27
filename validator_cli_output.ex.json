@@ -1,0 +1,2963 @@
+{
+  "resourceType" : "Bundle",
+  "type" : "collection",
+  "entry" : [{
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><p>All OK</p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td></tr><tr><td>information</td><td/><td>informational</td><td>All OK</td><td/></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\allergyIntolerance-HDP-aspirin-intolerance.json"
+      }],
+      "issue" : [{
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "All OK"
+        }
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Observation.identifier[0].system</td><td>invalid</td><td>Example URLs are not allowed in this context (http://hospital.example.org/observation)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Observation</td><td>informational</td><td>Validate Observation against the Blood pressure systolic and diastolic profile (http://hl7.org/fhir/StructureDefinition/bp) which is required by the FHIR specification because the LOINC code 85354-9 was found</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\bp.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 36
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 58
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Example URLs are not allowed in this context (http://hospital.example.org/observation)"
+        },
+        "expression" : ["Observation.identifier[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST_OBS"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "Validate Observation against the Blood pressure systolic and diastolic profile (http://hl7.org/fhir/StructureDefinition/bp) which is required by the FHIR specification because the LOINC code 85354-9 was found"
+        },
+        "expression" : ["Observation"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>information</td><td>CareTeam.contained[0]/*Practitioner/pr1*/.name[0]</td><td>informational</td><td>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>CareTeam</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\careTeam.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 32
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 10
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["CareTeam.contained[0]/*Practitioner/pr1*/.name[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["CareTeam"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Communication.identifier[0].system</td><td>invalid</td><td>Example URLs are not allowed in this context (http://hospital.example.org/communications)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Communication-communication-hdp-pathology.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 22
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 61
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Example URLs are not allowed in this context (http://hospital.example.org/communications)"
+        },
+        "expression" : ["Communication.identifier[0].system"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Condition.verificationStatus</td><td>code-invalid</td><td>None of the codings provided are in the value set 'ConditionVerificationStatus' (http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1), and a coding from this value set is required) (codes = null#confirmed)</td><td/><td>TerminologyEngine</td></tr><tr><td>error</td><td>Condition</td><td>structure</td><td>Condition.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-condition|0.2.4)</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>Condition.verificationStatus.coding[0]</td><td>invalid</td><td>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>Condition</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Condition-burnt-ear.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 69
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_1_CC"
+        }],
+        "severity" : "error",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'ConditionVerificationStatus' (http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1), and a coding from this value set is required) (codes = null#confirmed)"
+        },
+        "expression" : ["Condition.verificationStatus"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "Condition.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-condition|0.2.4)"
+        },
+        "expression" : ["Condition"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 69
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        }],
+        "severity" : "warning",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided"
+        },
+        "expression" : ["Condition.verificationStatus.coding[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Condition"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>SupplyDelivery.identifier[0].system</td><td>invalid</td><td>Example URLs are not allowed in this context (http://hospital.example.org/device-dispenses)</td><td/><td>InstanceValidator</td></tr><tr><td>error</td><td>SupplyDelivery</td><td>structure</td><td>The extension http://fhir.health.gov.il/StructureDefinition/ext-device-dispense-when-handed-over is not allowed to be used at this point (allowed = e:ILCoreDeviceDispense; this element is [SupplyDelivery])</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\device-dispense-pump.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 22
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 63
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Example URLs are not allowed in this context (http://hospital.example.org/device-dispenses)"
+        },
+        "expression" : ["SupplyDelivery.identifier[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Extension_EXTP_Context_Wrong"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "The extension http://fhir.health.gov.il/StructureDefinition/ext-device-dispense-when-handed-over is not allowed to be used at this point (allowed = e:ILCoreDeviceDispense; this element is [SupplyDelivery])"
+        },
+        "expression" : ["SupplyDelivery"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Device.identifier[0].system</td><td>invalid</td><td>Example URLs are not allowed in this context (http://hospital.example.org/devices)</td><td/><td>InstanceValidator</td></tr><tr><td>error</td><td>Device.type.coding[0].display</td><td>invalid</td><td>Wrong Display Name 'Infusion pump (physical object)' for http://snomed.info/sct#706172005. Valid display is one of 2 choices: 'Ventilator' (en) or 'Ventilator (physical object)' (en) (for the language(s) 'en')</td><td/><td>TerminologyEngine</td></tr><tr><td>information</td><td>Device.type</td><td>code-invalid</td><td>None of the codings provided are in the value set 'IL Core Device Type codes' (http://fhir.health.gov.il/ValueSet/il-core-device-type|0.18.4), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#706172005)</td><td/><td>TerminologyEngine</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Device-hdp-device-infusion-pump.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 22
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 54
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Example URLs are not allowed in this context (http://hospital.example.org/devices)"
+        },
+        "expression" : ["Device.identifier[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 31
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Display_Name_for__should_be_one_of__instead_of"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Wrong Display Name 'Infusion pump (physical object)' for http://snomed.info/sct#706172005. Valid display is one of 2 choices: 'Ventilator' (en) or 'Ventilator (physical object)' (en) (for the language(s) 'en')"
+        },
+        "expression" : ["Device.type.coding[0].display"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 31
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_3_CC"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'IL Core Device Type codes' (http://fhir.health.gov.il/ValueSet/il-core-device-type|0.18.4), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#706172005)"
+        },
+        "expression" : ["Device.type"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>DeviceRequest.identifier[0].system</td><td>invalid</td><td>Example URLs are not allowed in this context (http://hospital.example.org/device-requests)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\device-request-pump.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 22
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 62
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Example URLs are not allowed in this context (http://hospital.example.org/device-requests)"
+        },
+        "expression" : ["DeviceRequest.identifier[0].system"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>DeviceUseStatement.identifier[0].system</td><td>invalid</td><td>Example URLs are not allowed in this context (http://hospital.example.org/deviceusestatement)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\DeviceUseStatement-device-use-statement-cpap.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 22
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 65
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Example URLs are not allowed in this context (http://hospital.example.org/deviceusestatement)"
+        },
+        "expression" : ["DeviceUseStatement.identifier[0].system"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>DiagnosticReport</td><td>structure</td><td>DiagnosticReport.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-diagnostic-report|0.2.4)</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>DiagnosticReport</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\diagnostic-lab-report.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "DiagnosticReport.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-diagnostic-report|0.2.4)"
+        },
+        "expression" : ["DiagnosticReport"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["DiagnosticReport"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>DiagnosticReport</td><td>structure</td><td>DiagnosticReport.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-diagnostic-report|0.2.4)</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>DiagnosticReport</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\diagnostic-pathology-study.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "DiagnosticReport.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-diagnostic-report|0.2.4)"
+        },
+        "expression" : ["DiagnosticReport"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["DiagnosticReport"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>DocumentReference.identifier[0].system</td><td>invalid</td><td>Example URLs are not allowed in this context (http://hospital.example.org/documents)</td><td/><td>InstanceValidator</td></tr><tr><td>error</td><td>DocumentReference.content[0].attachment.url</td><td>invalid</td><td>Example URLs are not allowed in this context (http://hospital.example.org/fhir/Binary/12345)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>DocumentReference.type</td><td>code-invalid</td><td>None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>DocumentReference.type</td><td>code-invalid</td><td>None of the codings provided are in the value set 'ILHDP Document Reference Types' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types|0.2.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>DocumentReference.type.coding[0].system</td><td>not-found</td><td>A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>DocumentReference.type.coding[0]</td><td>not-found</td><td>A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\DocumentReference-document-reference-pathology-report.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 22
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 56
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Example URLs are not allowed in this context (http://hospital.example.org/documents)"
+        },
+        "expression" : ["DocumentReference.identifier[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 60
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 63
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Example URLs are not allowed in this context (http://hospital.example.org/fhir/Binary/12345)"
+        },
+        "expression" : ["DocumentReference.content[0].attachment.url"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 34
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_3_CC"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)"
+        },
+        "expression" : ["DocumentReference.type"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 34
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'ILHDP Document Reference Types' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types|0.2.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)"
+        },
+        "expression" : ["DocumentReference.type"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 34
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "UNKNOWN_CODESYSTEM"
+        }],
+        "severity" : "warning",
+        "code" : "not-found",
+        "details" : {
+          "text" : "A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated"
+        },
+        "expression" : ["DocumentReference.type.coding[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 34
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        }],
+        "severity" : "warning",
+        "code" : "not-found",
+        "details" : {
+          "text" : "A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated"
+        },
+        "expression" : ["DocumentReference.type.coding[0]"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>warning</td><td>Linkage</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Linkage-ILHDPLinkageExample.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Linkage"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>warning</td><td>Location</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Location-hospital-unit.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Location"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Medication.identifier[0].system</td><td>invalid</td><td>Example URLs are not allowed in this context (http://hospital.example.org/medications)</td><td/><td>InstanceValidator</td></tr><tr><td>error</td><td>Medication.code.coding[0].system</td><td>invalid</td><td>The Coding references a value set, not a code system ('http://fhir.health.gov.il/ValueSet/il-core-medication-code')</td><td/><td>TerminologyEngine</td></tr><tr><td>error</td><td>Medication.form.coding[0].system</td><td>invalid</td><td>The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-form-codes')</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>Medication.code</td><td>code-invalid</td><td>None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.18.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/ValueSet/il-core-medication-code#123456)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>Medication.form</td><td>code-invalid</td><td>None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hl7.org/fhir/ValueSet/medication-form-codes#capsule)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>Medication.code.coding[0].system</td><td>not-found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/ValueSet/il-core-medication-code' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>Medication.form.coding[0]</td><td>not-found</td><td>A definition for CodeSystem 'http://hl7.org/fhir/ValueSet/medication-form-codes' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Medication-amoxicillin.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 22
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 58
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Example URLs are not allowed in this context (http://hospital.example.org/medications)"
+        },
+        "expression" : ["Medication.identifier[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 29
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_System_ValueSet2"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "The Coding references a value set, not a code system ('http://fhir.health.gov.il/ValueSet/il-core-medication-code')"
+        },
+        "expression" : ["Medication.code.coding[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 38
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_System_ValueSet2"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-form-codes')"
+        },
+        "expression" : ["Medication.form.coding[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 29
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.18.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/ValueSet/il-core-medication-code#123456)"
+        },
+        "expression" : ["Medication.code"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 38
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hl7.org/fhir/ValueSet/medication-form-codes#capsule)"
+        },
+        "expression" : ["Medication.form"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 29
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "UNKNOWN_CODESYSTEM"
+        }],
+        "severity" : "warning",
+        "code" : "not-found",
+        "details" : {
+          "text" : "A definition for CodeSystem 'http://fhir.health.gov.il/ValueSet/il-core-medication-code' could not be found, so the code cannot be validated"
+        },
+        "expression" : ["Medication.code.coding[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 38
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        }],
+        "severity" : "warning",
+        "code" : "not-found",
+        "details" : {
+          "text" : "A definition for CodeSystem 'http://hl7.org/fhir/ValueSet/medication-form-codes' could not be found, so the code cannot be validated"
+        },
+        "expression" : ["Medication.form.coding[0]"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>MedicationDispense</td><td>structure</td><td>MedicationDispense.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense|0.2.4)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>MedicationDispense.category</td><td>code-invalid</td><td>None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>MedicationDispense.dosageInstruction[0].route</td><td>code-invalid</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>MedicationDispense.dosageInstruction[0].site</td><td>code-invalid</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>MedicationDispense</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\medication-dispense.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "MedicationDispense.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense|0.2.4)"
+        },
+        "expression" : ["MedicationDispense"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 23
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_3_CC"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)"
+        },
+        "expression" : ["MedicationDispense.category"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 77
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_Code_ValueSet_Ext"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1)"
+        },
+        "expression" : ["MedicationDispense.dosageInstruction[0].route"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 85
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_Code_ValueSet_Ext"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+        },
+        "expression" : ["MedicationDispense.dosageInstruction[0].site"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["MedicationDispense"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>information</td><td>MedicationAdministration.category</td><td>code-invalid</td><td>None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>MedicationAdministration.dosage.site</td><td>code-invalid</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\MedicationAdministration-hdp-medication-administration-morphine.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 26
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_3_CC"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)"
+        },
+        "expression" : ["MedicationAdministration.category"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 79
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_Code_ValueSet_Ext"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+        },
+        "expression" : ["MedicationAdministration.dosage.site"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>MedicationDispense</td><td>structure</td><td>MedicationDispense.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense|0.2.4)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>MedicationDispense.category</td><td>code-invalid</td><td>None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>MedicationDispense.dosageInstruction[0].route</td><td>code-invalid</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>MedicationDispense.dosageInstruction[0].site</td><td>code-invalid</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>MedicationDispense</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\MedicationDispense-hdp-medication-dispense.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "MedicationDispense.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense|0.2.4)"
+        },
+        "expression" : ["MedicationDispense"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 22
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_3_CC"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)"
+        },
+        "expression" : ["MedicationDispense.category"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 67
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_Code_ValueSet_Ext"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1)"
+        },
+        "expression" : ["MedicationDispense.dosageInstruction[0].route"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 75
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_Code_ValueSet_Ext"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+        },
+        "expression" : ["MedicationDispense.dosageInstruction[0].site"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["MedicationDispense"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>MedicationStatement</td><td>structure</td><td>MedicationStatement.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-statement|0.2.4)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>MedicationStatement.category</td><td>code-invalid</td><td>None of the codings provided are in the value set 'Medication usage category codes' (http://hl7.org/fhir/ValueSet/medication-statement-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>MedicationStatement.category</td><td>code-invalid</td><td>None of the codings provided are in the value set 'ILCore Medication statement Category' (http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category|0.18.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>MedicationStatement.dosage[0].site</td><td>code-invalid</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>MedicationStatement.category.coding[0].system</td><td>not-found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>MedicationStatement.category.coding[0]</td><td>not-found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\medicationStatement-fluoxetine-20-mg.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "MedicationStatement.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-statement|0.2.4)"
+        },
+        "expression" : ["MedicationStatement"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 35
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_3_CC"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'Medication usage category codes' (http://hl7.org/fhir/ValueSet/medication-statement-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/medication-category#community-other)"
+        },
+        "expression" : ["MedicationStatement.category"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 35
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'ILCore Medication statement Category' (http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category|0.18.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/medication-category#community-other)"
+        },
+        "expression" : ["MedicationStatement.category"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 74
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_Code_ValueSet_Ext"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+        },
+        "expression" : ["MedicationStatement.dosage[0].site"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 35
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "UNKNOWN_CODESYSTEM"
+        }],
+        "severity" : "warning",
+        "code" : "not-found",
+        "details" : {
+          "text" : "A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated"
+        },
+        "expression" : ["MedicationStatement.category.coding[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 35
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        }],
+        "severity" : "warning",
+        "code" : "not-found",
+        "details" : {
+          "text" : "A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated"
+        },
+        "expression" : ["MedicationStatement.category.coding[0]"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>MedicationRequest</td><td>structure</td><td>MedicationRequest.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.2.4)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>MedicationRequest.supportingInformation[0]</td><td>informational</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>MedicationRequest.dosageInstruction[0].site</td><td>code-invalid</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\metamizole-for-gangreenous-tonsolitis.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "MedicationRequest.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.2.4)"
+        },
+        "expression" : ["MedicationRequest"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 59
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["MedicationRequest.supportingInformation[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 108
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_Code_ValueSet_Ext"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+        },
+        "expression" : ["MedicationRequest.dosageInstruction[0].site"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>MedicationAdministration</td><td>structure</td><td>MedicationAdministration.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-administration|0.2.4)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>MedicationAdministration.category</td><td>code-invalid</td><td>None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>MedicationAdministration.dosage.site</td><td>code-invalid</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\morphine-hospitalization.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "MedicationAdministration.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-administration|0.2.4)"
+        },
+        "expression" : ["MedicationAdministration"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 31
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_3_CC"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)"
+        },
+        "expression" : ["MedicationAdministration.category"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 90
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_Code_ValueSet_Ext"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+        },
+        "expression" : ["MedicationAdministration.dosage.site"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Observation.meta.security[0]</td><td>code-invalid</td><td>The Coding provided (http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory) was not found in the value set 'ILHDP Information Buckets' (http://fhir.health.gov.il/ValueSet/il-hdp-information-buckets|0.2.4), and a code is required from this value set.  (error message = The provided code 'http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory: 'מעבדה'' was not found in the value set 'http://fhir.health.gov.il/ValueSet/il-hdp-information-buckets|0.2.4'; Unknown code 'laboratory' in the CodeSystem 'http://fhir.health.gov.il/cs/il-hdp-information-buckets' version '0.18.4')</td><td/><td>TerminologyEngine</td></tr><tr><td>error</td><td>Observation.meta.security[0]</td><td>code-invalid</td><td>The Coding provided (http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory) was not found in the value set 'ILHDP Observation Information Buckets' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-observation-information-buckets|0.2.4), and a code is required from this value set.  (error message = The provided code 'http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory: 'מעבדה'' was not found in the value set 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-observation-information-buckets|0.2.4'; Unknown code 'laboratory' in the CodeSystem 'http://fhir.health.gov.il/cs/il-hdp-information-buckets' version '0.18.4')</td><td/><td>TerminologyEngine</td></tr><tr><td>error</td><td>Observation.meta.security[0].code</td><td>code-invalid</td><td>Unknown code 'laboratory' in the CodeSystem 'http://fhir.health.gov.il/cs/il-hdp-information-buckets' version '0.18.4'</td><td/><td>TerminologyEngine</td></tr><tr><td>error</td><td>Observation.identifier[0].system</td><td>invalid</td><td>Example URLs are not allowed in this context (http://hospital.example.org/observations)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Observation-blood-glucose.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_12"
+        }],
+        "severity" : "error",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "The Coding provided (http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory) was not found in the value set 'ILHDP Information Buckets' (http://fhir.health.gov.il/ValueSet/il-hdp-information-buckets|0.2.4), and a code is required from this value set.  (error message = The provided code 'http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory: 'מעבדה'' was not found in the value set 'http://fhir.health.gov.il/ValueSet/il-hdp-information-buckets|0.2.4'; Unknown code 'laboratory' in the CodeSystem 'http://fhir.health.gov.il/cs/il-hdp-information-buckets' version '0.18.4')"
+        },
+        "expression" : ["Observation.meta.security[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_12"
+        }],
+        "severity" : "error",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "The Coding provided (http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory) was not found in the value set 'ILHDP Observation Information Buckets' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-observation-information-buckets|0.2.4), and a code is required from this value set.  (error message = The provided code 'http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory: 'מעבדה'' was not found in the value set 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-observation-information-buckets|0.2.4'; Unknown code 'laboratory' in the CodeSystem 'http://fhir.health.gov.il/cs/il-hdp-information-buckets' version '0.18.4')"
+        },
+        "expression" : ["Observation.meta.security[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        }],
+        "severity" : "error",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "Unknown code 'laboratory' in the CodeSystem 'http://fhir.health.gov.il/cs/il-hdp-information-buckets' version '0.18.4'"
+        },
+        "expression" : ["Observation.meta.security[0].code"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 22
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 59
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Example URLs are not allowed in this context (http://hospital.example.org/observations)"
+        },
+        "expression" : ["Observation.identifier[0].system"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Observation.meta.security[0].code</td><td>value</td><td>Value is 'assessments' but is fixed to 'laboratoryTests' in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.2.4#Observation.meta.security:HDP.code</td><td/><td>InstanceValidator</td></tr><tr><td>error</td><td>Observation.meta.security[0].display</td><td>value</td><td>Value is 'אומדנים' but is fixed to 'בדיקות מעבדה' in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.2.4#Observation.meta.security:HDP.display</td><td/><td>InstanceValidator</td></tr><tr><td>error</td><td>Observation</td><td>structure</td><td>Observation.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.2.4)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Observation.category[0]</td><td>code-invalid</td><td>None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#108252007)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>Observation</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Observation-hemoglobin-lab-test.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 30
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "_DT_Fixed_Wrong"
+        }],
+        "severity" : "error",
+        "code" : "value",
+        "details" : {
+          "text" : "Value is 'assessments' but is fixed to 'laboratoryTests' in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.2.4#Observation.meta.security:HDP.code"
+        },
+        "expression" : ["Observation.meta.security[0].code"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 9
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 29
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "_DT_Fixed_Wrong"
+        }],
+        "severity" : "error",
+        "code" : "value",
+        "details" : {
+          "text" : "Value is 'אומדנים' but is fixed to 'בדיקות מעבדה' in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.2.4#Observation.meta.security:HDP.display"
+        },
+        "expression" : ["Observation.meta.security[0].display"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "Observation.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.2.4)"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 17
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_3_CC"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#108252007)"
+        },
+        "expression" : ["Observation.category[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Observation"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><p>All OK</p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td></tr><tr><td>information</td><td/><td>informational</td><td>All OK</td><td/></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Organization-hospital-unit.json"
+      }],
+      "issue" : [{
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "All OK"
+        }
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><p>All OK</p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td></tr><tr><td>information</td><td/><td>informational</td><td>All OK</td><td/></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Organization-ministry-of-health.json"
+      }],
+      "issue" : [{
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "All OK"
+        }
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]</td><td>not-supported</td><td>This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/Reference|4.0.1</td><td/><td>InstanceValidator</td></tr><tr><td>error</td><td>Medication.ingredient[0].item.ofType(CodeableConcept)</td><td>invalid</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.2.4 and slicing is CLOSED: Medication.ingredient[0].item.ofType(CodeableConcept): Does not match slice 'itemReference' (discriminator: ($this is Reference))</td><td/><td>InstanceValidator</td></tr><tr><td>error</td><td>Medication</td><td>structure</td><td>Medication.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.2.4)</td><td/><td>InstanceValidator</td></tr><tr><td>error</td><td>Medication.ingredient[0].item.ofType(CodeableConcept)</td><td>structure</td><td>The Profile 'http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.2.4' definition allows for the type Reference but found type CodeableConcept</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>Medication.code</td><td>code-invalid</td><td>None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.18.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://israeldrugs.health.gov.il#020162053400, http://www.whocc.no/atc#N02BE01)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>Medication.form</td><td>code-invalid</td><td>None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#421026006)</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>Medication.code.coding[0].system</td><td>not-found</td><td>A definition for CodeSystem 'http://israeldrugs.health.gov.il' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>Medication.ingredient[0].item.ofType(CodeableConcept)</td><td>structure</td><td>A Reference without an actual reference or identifier should have a display</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\paracetamol.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 52
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 12
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_NotAllowed"
+        }],
+        "severity" : "error",
+        "code" : "not-supported",
+        "details" : {
+          "text" : "This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/Reference|4.0.1"
+        },
+        "expression" : ["Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 50
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_NotSlice"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.2.4 and slicing is CLOSED: Medication.ingredient[0].item.ofType(CodeableConcept): Does not match slice 'itemReference' (discriminator: ($this is Reference))"
+        },
+        "expression" : ["Medication.ingredient[0].item.ofType(CodeableConcept)"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "Medication.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.2.4)"
+        },
+        "expression" : ["Medication"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 49
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Extension_PROF_Type"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "The Profile 'http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.2.4' definition allows for the type Reference but found type CodeableConcept"
+        },
+        "expression" : ["Medication.ingredient[0].item.ofType(CodeableConcept)"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 20
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.18.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://israeldrugs.health.gov.il#020162053400, http://www.whocc.no/atc#N02BE01)"
+        },
+        "expression" : ["Medication.code"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 39
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#421026006)"
+        },
+        "expression" : ["Medication.form"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 20
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "UNKNOWN_CODESYSTEM"
+        }],
+        "severity" : "warning",
+        "code" : "not-found",
+        "details" : {
+          "text" : "A definition for CodeSystem 'http://israeldrugs.health.gov.il' could not be found, so the code cannot be validated"
+        },
+        "expression" : ["Medication.code.coding[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 50
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Reference_REF_NoDisplay"
+        }],
+        "severity" : "warning",
+        "code" : "structure",
+        "details" : {
+          "text" : "A Reference without an actual reference or identifier should have a display"
+        },
+        "expression" : ["Medication.ingredient[0].item.ofType(CodeableConcept)"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>information</td><td>Patient.name[0].extension[0]</td><td>informational</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Patient.name[0].extension[0].value.ofType(code)</td><td>code-invalid</td><td>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#he' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>Patient</td><td>invariant</td><td>Constraint failed: check-identifiers: 'Must have at least one identifier  from slices il-id or ppn' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Patient-patient-with-israeli-id.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 63
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 10
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["Patient.name[0].extension[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 65
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 28
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_18"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#he' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')"
+        },
+        "expression" : ["Patient.name[0].extension[0].value.ofType(code)"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient#check-identifiers"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: check-identifiers: 'Must have at least one identifier  from slices il-id or ppn' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)"
+        },
+        "expression" : ["Patient"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Practitioner</td><td>invariant</td><td>Constraint failed: prac-ident-enc: 'identifier must contain at least one member with either: 1.system = http://fhir.health.gov.il/identifier/encrypted-id-primary-moh; OR a value from PassportEncUri' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Practitioner.name[0].extension[0]</td><td>informational</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Practitioner.qualification[1].identifier[0]</td><td>informational</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>code-invalid</td><td>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#he' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</td><td/><td>TerminologyEngine</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Practitioner-anesthesiologist-with-expertise.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner#prac-ident-enc"
+        }],
+        "severity" : "error",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: prac-ident-enc: 'identifier must contain at least one member with either: 1.system = http://fhir.health.gov.il/identifier/encrypted-id-primary-moh; OR a value from PassportEncUri' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)"
+        },
+        "expression" : ["Practitioner"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 35
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 10
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["Practitioner.name[0].extension[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 92
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 10
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["Practitioner.qualification[1].identifier[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 37
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 28
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_18"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#he' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')"
+        },
+        "expression" : ["Practitioner.name[0].extension[0].value.ofType(code)"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>PractitionerRole</td><td>invariant</td><td>Constraint failed: prac-role-code-specialty: 'Must contain at least 'code' or 'specialty'' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner-role)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\PractitionerRole-gp.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner-role#prac-role-code-specialty"
+        }],
+        "severity" : "error",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: prac-role-code-specialty: 'Must contain at least 'code' or 'specialty'' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner-role)"
+        },
+        "expression" : ["PractitionerRole"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Practitioner</td><td>invariant</td><td>Constraint failed: prac-ident-enc: 'identifier must contain at least one member with either: 1.system = http://fhir.health.gov.il/identifier/encrypted-id-primary-moh; OR a value from PassportEncUri' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Practitioner.identifier[0]</td><td>informational</td><td>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Practitioner.identifier[0]</td><td>informational</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Practitioner.name[0].extension[0]</td><td>informational</td><td>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Practitioner.name[0].extension[0]</td><td>informational</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>code-invalid</td><td>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#he' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</td><td/><td>TerminologyEngine</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Practitioner_practitioner-md-hdp.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner#prac-ident-enc"
+        }],
+        "severity" : "error",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: prac-ident-enc: 'identifier must contain at least one member with either: 1.system = http://fhir.health.gov.il/identifier/encrypted-id-primary-moh; OR a value from PassportEncUri' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)"
+        },
+        "expression" : ["Practitioner"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 18
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["Practitioner.identifier[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 18
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["Practitioner.identifier[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 46
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 10
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["Practitioner.name[0].extension[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 46
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 10
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["Practitioner.name[0].extension[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 48
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 28
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_18"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#he' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')"
+        },
+        "expression" : ["Practitioner.name[0].extension[0].value.ofType(code)"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><p>All OK</p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td></tr><tr><td>information</td><td/><td>informational</td><td>All OK</td><td/></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\ServiceRequest-chest-xray.json"
+      }],
+      "issue" : [{
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "All OK"
+        }
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Specimen</td><td>structure</td><td>The extension http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner is not allowed to be used at this point (allowed = e:Specimen.processing; this element is [Specimen])</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>Specimen.collection.collector</td><td>structure</td><td>A Reference without an actual reference or identifier should have a display</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>Specimen</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Specimen-hdp-specimen-pathology-biopsy-1.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Extension_EXTP_Context_Wrong"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "The extension http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner is not allowed to be used at this point (allowed = e:Specimen.processing; this element is [Specimen])"
+        },
+        "expression" : ["Specimen"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 52
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Reference_REF_NoDisplay"
+        }],
+        "severity" : "warning",
+        "code" : "structure",
+        "details" : {
+          "text" : "A Reference without an actual reference or identifier should have a display"
+        },
+        "expression" : ["Specimen.collection.collector"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Specimen"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Specimen.processing[0]</td><td>structure</td><td>The extension http://fhir.health.gov.il/StructureDefinition/ext-processing-location is not allowed to be used at this point (allowed = e:Specimen; this element is [BackboneElement, Specimen.processing])</td><td/><td>InstanceValidator</td></tr><tr><td>information</td><td>Specimen.meta.profile[0]</td><td>invalid</td><td>Canonical URL 'http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-laboratoryTests' does not resolve</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>Specimen.meta.security[0]</td><td>code-invalid</td><td>The Coding provided (http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratoryTests) was not found in the value set 'SecurityLabels' (http://hl7.org/fhir/ValueSet/security-labels|4.0.1), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = The provided code 'http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratoryTests: 'בדיקות מעבדה'' was not found in the value set 'http://hl7.org/fhir/ValueSet/security-labels|4.0.1')</td><td/><td>TerminologyEngine</td></tr><tr><td>warning</td><td>Specimen.meta.profile[0]</td><td>structure</td><td>Profile reference 'http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-laboratoryTests' has not been checked because it could not be found, and the host hdp.fhir.health.gov.il cannot be found</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>Specimen.collection.collector</td><td>structure</td><td>A Reference without an actual reference or identifier should have a display</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>Specimen</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Specimen-pathology.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 72
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Extension_EXTP_Context_Wrong"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "The extension http://fhir.health.gov.il/StructureDefinition/ext-processing-location is not allowed to be used at this point (allowed = e:Specimen; this element is [BackboneElement, Specimen.processing])"
+        },
+        "expression" : ["Specimen.processing[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 13
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 90
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"
+        }],
+        "severity" : "information",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Canonical URL 'http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-laboratoryTests' does not resolve"
+        },
+        "expression" : ["Specimen.meta.profile[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_13"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "The Coding provided (http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratoryTests) was not found in the value set 'SecurityLabels' (http://hl7.org/fhir/ValueSet/security-labels|4.0.1), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = The provided code 'http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratoryTests: 'בדיקות מעבדה'' was not found in the value set 'http://hl7.org/fhir/ValueSet/security-labels|4.0.1')"
+        },
+        "expression" : ["Specimen.meta.security[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "VALIDATION_VAL_PROFILE_UNKNOWN_ERROR_NETWORK"
+        }],
+        "severity" : "warning",
+        "code" : "structure",
+        "details" : {
+          "text" : "Profile reference 'http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-laboratoryTests' has not been checked because it could not be found, and the host hdp.fhir.health.gov.il cannot be found"
+        },
+        "expression" : ["Specimen.meta.profile[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 43
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Reference_REF_NoDisplay"
+        }],
+        "severity" : "warning",
+        "code" : "structure",
+        "details" : {
+          "text" : "A Reference without an actual reference or identifier should have a display"
+        },
+        "expression" : ["Specimen.collection.collector"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Specimen"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Specimen.collection.bodySite.coding[0].code</td><td>code-invalid</td><td>Unknown code '36765003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'</td><td/><td>TerminologyEngine</td></tr><tr><td>error</td><td>Specimen.processing[0]</td><td>structure</td><td>The extension http://fhir.health.gov.il/StructureDefinition/ext-processing-location is not allowed to be used at this point (allowed = e:Specimen; this element is [BackboneElement, Specimen.processing])</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>Specimen.collection.bodySite</td><td>code-invalid</td><td>None of the codings provided are in the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#36765003)</td><td/><td>TerminologyEngine</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Specimen-serum-patient.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 80
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Unknown_Code_in_Version"
+        }],
+        "severity" : "error",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "Unknown code '36765003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'"
+        },
+        "expression" : ["Specimen.collection.bodySite.coding[0].code"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 91
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Extension_EXTP_Context_Wrong"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "The extension http://fhir.health.gov.il/StructureDefinition/ext-processing-location is not allowed to be used at this point (allowed = e:Specimen; this element is [BackboneElement, Specimen.processing])"
+        },
+        "expression" : ["Specimen.processing[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 80
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#36765003)"
+        },
+        "expression" : ["Specimen.collection.bodySite"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Substance.identifier[0].system</td><td>invalid</td><td>Example URLs are not allowed in this context (http://hospital.example.org/substances)</td><td/><td>InstanceValidator</td></tr><tr><td>error</td><td>Substance.code.coding[0].display</td><td>invalid</td><td>Wrong Display Name 'Blood specimen (substance)' for http://snomed.info/sct#119297000. Valid display is one of 3 choices: 'Blood specimen' (en), 'Blood specimen (specimen)' (en) or 'Blood sample' (en) (for the language(s) 'en')</td><td/><td>TerminologyEngine</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\HDP\\examples\\Substance-blood-sample.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 22
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 57
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Example URLs are not allowed in this context (http://hospital.example.org/substances)"
+        },
+        "expression" : ["Substance.identifier[0].system"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 26
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Display_Name_for__should_be_one_of__instead_of"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Wrong Display Name 'Blood specimen (substance)' for http://snomed.info/sct#119297000. Valid display is one of 3 choices: 'Blood specimen' (en), 'Blood specimen (specimen)' (en) or 'Blood sample' (en) (for the language(s) 'en')"
+        },
+        "expression" : ["Substance.code.coding[0].display"]
+      }]
+    }
+  }]
+}

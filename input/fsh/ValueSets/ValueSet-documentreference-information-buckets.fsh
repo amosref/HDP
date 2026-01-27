@@ -1,7 +1,8 @@
-ValueSet: DocumentReferenceHDPInformationBuckets
+ValueSet: ILHDPDocumentReferenceHDPInformationBuckets
 Id: il-hdp-document-reference-information-buckets
 Title: "ILHDP Diagnosticeport Information Buckets"
 Description: "A list of information baskets for meta-security in ILHDPDocumentReference"
+* insert ConformanceMetadata
 * ^url = $vs-document-reference-meta
 * ^status = #draft
 * ^experimental = false
@@ -14,3 +15,4 @@ Description: "A list of information baskets for meta-security in ILHDPDocumentRe
 * $info-buckets#pathology "פתולוגיה"
 * $info-buckets#clinicalNotes "סיכומים"
 * $info-buckets#procedures "פרוצדורות"
+* $info-buckets#medications "תרופות" 

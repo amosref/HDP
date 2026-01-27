@@ -3,6 +3,8 @@ Parent: ILCoreDiagnosticReport
 Id: il-hdp-diagnostic-report-pathology
 Title: "ILHDP DiagnosticReport Pathology"
 Description: "DiagnosticReport-Pathology profile for HDP"
+* insert ConformanceMetadata
+* . obeys one-strong-identifier
 * meta only ILHDPMeta
 * meta 1..1
 * meta.security ^slicing.discriminator.type = #value
@@ -15,6 +17,7 @@ Description: "DiagnosticReport-Pathology profile for HDP"
 * meta.security[HDP].system = $info-buckets (exactly)
 * meta.security[HDP].code = #pathology (exactly)
 * meta.security[HDP].display = "פתולוגיה" (exactly)
+* identifier 1..*
 * subject 1..1
 * subject only Reference(ILHDPPatient or ILHDPLocation or il-core-location or il-core-device)
 * basedOn only Reference(ILCoreCarePlan or ILCoreImmunizationRecommendation or ILHDPMedicationRequest or ILCoreNutritionOrder or ILCoreServiceRequest or
@@ -24,3 +27,4 @@ Description: "DiagnosticReport-Pathology profile for HDP"
 * resultsInterpreter only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or il-core-practitioner or il-core-practitioner-role or il-core-organization or il-core-care-team)
 * conclusion 1..1
 * conclusionCode 1..*
+* result 1..*

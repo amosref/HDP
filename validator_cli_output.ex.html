@@ -1,0 +1,711 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Validation Results</title>
+  <link href="http://hl7.org/fhir/fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results</h1>
+ <p>42 errors, 40 warnings, 21 hints. Generated Sep 25, 2025, 7:45:30 PM by Validator Version 6.5.17 (Git# e11379272e66). Built 2025-03-19T04:15:30.243Z (190 days old) (80456ms)</p>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;1"><b>C:\FHIR\HDP\examples\allergyIntolerance-HDP-aspirin-intolerance.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;2"><b>C:\FHIR\HDP\examples\bp.json</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;3"><b>C:\FHIR\HDP\examples\careTeam.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;4"><b>C:\FHIR\HDP\examples\Communication-communication-hdp-pathology.json</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;5"><b>C:\FHIR\HDP\examples\Condition-burnt-ear.json</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;6"><b>C:\FHIR\HDP\examples\device-dispense-pump.json</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;7"><b>C:\FHIR\HDP\examples\Device-hdp-device-infusion-pump.json</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;8"><b>C:\FHIR\HDP\examples\device-request-pump.json</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;9"><b>C:\FHIR\HDP\examples\DeviceUseStatement-device-use-statement-cpap.json</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;10"><b>C:\FHIR\HDP\examples\diagnostic-lab-report.json</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;11"><b>C:\FHIR\HDP\examples\diagnostic-pathology-study.json</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;12"><b>C:\FHIR\HDP\examples\DocumentReference-document-reference-pathology-report.json</b></a></td><td><b>2</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;13"><b>C:\FHIR\HDP\examples\Linkage-ILHDPLinkageExample.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;14"><b>C:\FHIR\HDP\examples\Location-hospital-unit.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;15"><b>C:\FHIR\HDP\examples\Medication-amoxicillin.json</b></a></td><td><b>3</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;16"><b>C:\FHIR\HDP\examples\medication-dispense.json</b></a></td><td><b>1</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;17"><b>C:\FHIR\HDP\examples\MedicationAdministration-hdp-medication-administration-morphine.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;18"><b>C:\FHIR\HDP\examples\MedicationDispense-hdp-medication-dispense.json</b></a></td><td><b>1</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;19"><b>C:\FHIR\HDP\examples\medicationStatement-fluoxetine-20-mg.json</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;20"><b>C:\FHIR\HDP\examples\metamizole-for-gangreenous-tonsolitis.json</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;21"><b>C:\FHIR\HDP\examples\morphine-hospitalization.json</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;22"><b>C:\FHIR\HDP\examples\Observation-blood-glucose.json</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;23"><b>C:\FHIR\HDP\examples\Observation-hemoglobin-lab-test.json</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;24"><b>C:\FHIR\HDP\examples\Organization-hospital-unit.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;25"><b>C:\FHIR\HDP\examples\Organization-ministry-of-health.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;26"><b>C:\FHIR\HDP\examples\paracetamol.json</b></a></td><td><b>4</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;27"><b>C:\FHIR\HDP\examples\Patient-patient-with-israeli-id.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;28"><b>C:\FHIR\HDP\examples\Practitioner-anesthesiologist-with-expertise.json</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;29"><b>C:\FHIR\HDP\examples\PractitionerRole-gp.json</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;30"><b>C:\FHIR\HDP\examples\Practitioner_practitioner-md-hdp.json</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>5</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;31"><b>C:\FHIR\HDP\examples\ServiceRequest-chest-xray.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;32"><b>C:\FHIR\HDP\examples\Specimen-hdp-specimen-pathology-biopsy-1.json</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;33"><b>C:\FHIR\HDP\examples\Specimen-pathology.json</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;34"><b>C:\FHIR\HDP\examples\Specimen-serum-patient.json</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;35"><b>C:\FHIR\HDP\examples\Substance-blood-sample.json</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l1"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\allergyIntolerance-HDP-aspirin-intolerance.json">C:\FHIR\HDP\examples\allergyIntolerance-HDP-aspirin-intolerance.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l2"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\bp.json">C:\FHIR\HDP\examples\bp.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.identifier[0].system (l36/c58)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"><b>Example URLs are not allowed in this context (http://hospital.example.org/observation)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_OBS"><b>Validate Observation against the Blood pressure systolic and diastolic profile (http://hl7.org/fhir/StructureDefinition/bp) which is required by the FHIR specification because the LOINC code 85354-9 was found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l3"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\careTeam.json">C:\FHIR\HDP\examples\careTeam.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CareTeam.contained[0]/*Practitioner/pr1*/.name[0] (l32/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm3" class="flip" onclick="flip('m3')">Show Reasoning</span><div id="m3" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>CareTeam.contained[0]/*Practitioner/pr1*/.name[0]: discriminator = true and ('he' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li>, <li>CareTeam.contained[0]/*Practitioner/pr1*/.name[0]: discriminator = true and ('en' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li>, <li>CareTeam.contained[0]/*Practitioner/pr1*/.name[0]: discriminator = true and ('ar' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CareTeam (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l4"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Communication-communication-hdp-pathology.json">C:\FHIR\HDP\examples\Communication-communication-hdp-pathology.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Communication.identifier[0].system (l22/c61)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"><b>Example URLs are not allowed in this context (http://hospital.example.org/communications)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l5"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Condition-burnt-ear.json">C:\FHIR\HDP\examples\Condition-burnt-ear.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Condition.verificationStatus.coding[0] (l69/c4)</b></td><td><b>warning</b></td><td title="null"><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.verificationStatus (l69/c4)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set 'ConditionVerificationStatus' (http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1), and a coding from this value set is required) (codes = null#confirmed)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Condition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Condition.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-condition|0.2.4)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l6"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\device-dispense-pump.json">C:\FHIR\HDP\examples\device-dispense-pump.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>SupplyDelivery (l1/c2)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://fhir.health.gov.il/StructureDefinition/ext-device-dispense-when-handed-over is not allowed to be used at this point (allowed = e:ILCoreDeviceDispense; this element is [SupplyDelivery])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>SupplyDelivery.identifier[0].system (l22/c63)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"><b>Example URLs are not allowed in this context (http://hospital.example.org/device-dispenses)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l7"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Device-hdp-device-infusion-pump.json">C:\FHIR\HDP\examples\Device-hdp-device-infusion-pump.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Device.identifier[0].system (l22/c54)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"><b>Example URLs are not allowed in this context (http://hospital.example.org/devices)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Device.type.coding[0].display (l31/c4)</b></td><td><b>error</b></td><td title="Display_Name_for__should_be_one_of__instead_of"><b>Wrong Display Name 'Infusion pump (physical object)' for http://snomed.info/sct#706172005. Valid display is one of 2 choices: 'Ventilator' (en) or 'Ventilator (physical object)' (en) (for the language(s) 'en')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Device.type (l31/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'IL Core Device Type codes' (http://fhir.health.gov.il/ValueSet/il-core-device-type|0.18.4), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#706172005)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l8"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\device-request-pump.json">C:\FHIR\HDP\examples\device-request-pump.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DeviceRequest.identifier[0].system (l22/c62)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"><b>Example URLs are not allowed in this context (http://hospital.example.org/device-requests)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l9"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\DeviceUseStatement-device-use-statement-cpap.json">C:\FHIR\HDP\examples\DeviceUseStatement-device-use-statement-cpap.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DeviceUseStatement.identifier[0].system (l22/c65)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"><b>Example URLs are not allowed in this context (http://hospital.example.org/deviceusestatement)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l10"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\diagnostic-lab-report.json">C:\FHIR\HDP\examples\diagnostic-lab-report.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DiagnosticReport (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DiagnosticReport (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>DiagnosticReport.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-diagnostic-report|0.2.4)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l11"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\diagnostic-pathology-study.json">C:\FHIR\HDP\examples\diagnostic-pathology-study.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DiagnosticReport (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DiagnosticReport (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>DiagnosticReport.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-diagnostic-report|0.2.4)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l12"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\DocumentReference-document-reference-pathology-report.json">C:\FHIR\HDP\examples\DocumentReference-document-reference-pathology-report.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference.identifier[0].system (l22/c56)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"><b>Example URLs are not allowed in this context (http://hospital.example.org/documents)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DocumentReference.type.coding[0].system (l34/c4)</b></td><td><b>warning</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>DocumentReference.type (l34/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference.content[0].attachment.url (l60/c63)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"><b>Example URLs are not allowed in this context (http://hospital.example.org/fhir/Binary/12345)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DocumentReference.type.coding[0] (l34/c4)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DocumentReference.type (l34/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ILHDP Document Reference Types' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types|0.2.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l13"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Linkage-ILHDPLinkageExample.json">C:\FHIR\HDP\examples\Linkage-ILHDPLinkageExample.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Linkage (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l14"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Location-hospital-unit.json">C:\FHIR\HDP\examples\Location-hospital-unit.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Location (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l15"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Medication-amoxicillin.json">C:\FHIR\HDP\examples\Medication-amoxicillin.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.identifier[0].system (l22/c58)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"><b>Example URLs are not allowed in this context (http://hospital.example.org/medications)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.code.coding[0].system (l29/c4)</b></td><td><b>warning</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'http://fhir.health.gov.il/ValueSet/il-core-medication-code' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.form.coding[0].system (l38/c4)</b></td><td><b>error</b></td><td title="Terminology_TX_System_ValueSet2"><b>The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-form-codes')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.code.coding[0].system (l29/c4)</b></td><td><b>error</b></td><td title="Terminology_TX_System_ValueSet2"><b>The Coding references a value set, not a code system ('http://fhir.health.gov.il/ValueSet/il-core-medication-code')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.code (l29/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.18.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/ValueSet/il-core-medication-code#123456)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.form.coding[0] (l38/c4)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'http://hl7.org/fhir/ValueSet/medication-form-codes' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.form (l38/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hl7.org/fhir/ValueSet/medication-form-codes#capsule)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l16"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\medication-dispense.json">C:\FHIR\HDP\examples\medication-dispense.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.category (l23/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationDispense (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>MedicationDispense.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense|0.2.4)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.dosageInstruction[0].site (l85/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.dosageInstruction[0].route (l77/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l17"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\MedicationAdministration-hdp-medication-administration-morphine.json">C:\FHIR\HDP\examples\MedicationAdministration-hdp-medication-administration-morphine.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationAdministration.category (l26/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationAdministration.dosage.site (l79/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l18"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\MedicationDispense-hdp-medication-dispense.json">C:\FHIR\HDP\examples\MedicationDispense-hdp-medication-dispense.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.category (l22/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationDispense (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>MedicationDispense.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense|0.2.4)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.dosageInstruction[0].site (l75/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.dosageInstruction[0].route (l67/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l19"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\medicationStatement-fluoxetine-20-mg.json">C:\FHIR\HDP\examples\medicationStatement-fluoxetine-20-mg.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationStatement.category.coding[0].system (l35/c4)</b></td><td><b>warning</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationStatement.category (l35/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Medication usage category codes' (http://hl7.org/fhir/ValueSet/medication-statement-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationStatement (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>MedicationStatement.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-statement|0.2.4)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationStatement.category.coding[0] (l35/c4)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationStatement.category (l35/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ILCore Medication statement Category' (http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category|0.18.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationStatement.dosage[0].site (l74/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l20"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\metamizole-for-gangreenous-tonsolitis.json">C:\FHIR\HDP\examples\metamizole-for-gangreenous-tonsolitis.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationRequest.supportingInformation[0] (l59/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm54" class="flip" onclick="flip('m54')">Show Reasoning</span><div id="m54" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>MedicationRequest.supportingInformation[0]: discriminator = true and $this.resolve().conformsTo('http://hl7.org/fhir/StructureDefinition/bodyweight')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>MedicationRequest.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.2.4)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest.dosageInstruction[0].site (l108/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l21"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\morphine-hospitalization.json">C:\FHIR\HDP\examples\morphine-hospitalization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationAdministration.category (l31/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationAdministration (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>MedicationAdministration.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-administration|0.2.4)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationAdministration.dosage.site (l90/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l22"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Observation-blood-glucose.json">C:\FHIR\HDP\examples\Observation-blood-glucose.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.identifier[0].system (l22/c59)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"><b>Example URLs are not allowed in this context (http://hospital.example.org/observations)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.meta.security[0].code (l6/c8)</b></td><td><b>error</b></td><td title="null"><b>Unknown code 'laboratory' in the CodeSystem 'http://fhir.health.gov.il/cs/il-hdp-information-buckets' version '0.18.4'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.meta.security[0] (l6/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory) was not found in the value set 'ILHDP Information Buckets' (http://fhir.health.gov.il/ValueSet/il-hdp-information-buckets|0.2.4), and a code is required from this value set.  (error message = The provided code 'http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory: 'מעבדה'' was not found in the value set 'http://fhir.health.gov.il/ValueSet/il-hdp-information-buckets|0.2.4'; Unknown code 'laboratory' in the CodeSystem 'http://fhir.health.gov.il/cs/il-hdp-information-buckets' version '0.18.4')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.meta.security[0] (l6/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory) was not found in the value set 'ILHDP Observation Information Buckets' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-observation-information-buckets|0.2.4), and a code is required from this value set.  (error message = The provided code 'http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratory: 'מעבדה'' was not found in the value set 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-observation-information-buckets|0.2.4'; Unknown code 'laboratory' in the CodeSystem 'http://fhir.health.gov.il/cs/il-hdp-information-buckets' version '0.18.4')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l23"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Observation-hemoglobin-lab-test.json">C:\FHIR\HDP\examples\Observation-hemoglobin-lab-test.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.category[0] (l17/c6)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#108252007)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Observation.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.2.4)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.meta.security[0].code (l8/c30)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'assessments' but is fixed to 'laboratoryTests' in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.2.4#Observation.meta.security:HDP.code</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.meta.security[0].display (l9/c29)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'אומדנים' but is fixed to 'בדיקות מעבדה' in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.2.4#Observation.meta.security:HDP.display</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l24"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Organization-hospital-unit.json">C:\FHIR\HDP\examples\Organization-hospital-unit.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l25"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Organization-ministry-of-health.json">C:\FHIR\HDP\examples\Organization-ministry-of-health.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l26"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\paracetamol.json">C:\FHIR\HDP\examples\paracetamol.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.code.coding[0].system (l20/c4)</b></td><td><b>warning</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'http://israeldrugs.health.gov.il' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Medication.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.2.4)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.code (l20/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.18.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://israeldrugs.health.gov.il#020162053400, http://www.whocc.no/atc#N02BE01)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.form (l39/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#421026006)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.ingredient[0].item.ofType(CodeableConcept) (l50/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotSlice"><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.2.4 and slicing is CLOSED: Medication.ingredient[0].item.ofType(CodeableConcept): Does not match slice 'itemReference' (discriminator: ($this is Reference))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.ingredient[0].item.ofType(CodeableConcept) (l49/c6)</b></td><td><b>error</b></td><td title="Extension_PROF_Type"><b>The Profile 'http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.2.4' definition allows for the type Reference but found type CodeableConcept</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.ingredient[0].item.ofType(CodeableConcept) (l50/c8)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.ingredient[0].item.ofType(CodeableConcept).coding[0] (l52/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/Reference|4.0.1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l27"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Patient-patient-with-israeli-id.json">C:\FHIR\HDP\examples\Patient-patient-with-israeli-id.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0].value.ofType(code) (l65/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#he' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l63/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm78" class="flip" onclick="flip('m78')">Show Reasoning</span><div id="m78" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient (l1/c2)</b></td><td><b>warning</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient#check-identifiers"><b>Constraint failed: check-identifiers: 'Must have at least one identifier  from slices il-id or ppn' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l28"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Practitioner-anesthesiologist-with-expertise.json">C:\FHIR\HDP\examples\Practitioner-anesthesiologist-with-expertise.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0].value.ofType(code) (l37/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#he' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0] (l35/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm81" class="flip" onclick="flip('m81')">Show Reasoning</span><div id="m81" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].identifier[0] (l92/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm82" class="flip" onclick="flip('m82')">Show Reasoning</span><div id="m82" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.qualification[1].identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/practitioner-expertise' in system)</li>, <li>Practitioner.qualification[1].identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/nurse-expertise' in system)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner (l1/c2)</b></td><td><b>error</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner#prac-ident-enc"><b>Constraint failed: prac-ident-enc: 'identifier must contain at least one member with either: 1.system = http://fhir.health.gov.il/identifier/encrypted-id-primary-moh; OR a value from PassportEncUri' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l29"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\PractitionerRole-gp.json">C:\FHIR\HDP\examples\PractitionerRole-gp.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>PractitionerRole (l1/c2)</b></td><td><b>error</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner-role#prac-role-code-specialty"><b>Constraint failed: prac-role-code-specialty: 'Must contain at least 'code' or 'specialty'' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner-role)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l30"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Practitioner_practitioner-md-hdp.json">C:\FHIR\HDP\examples\Practitioner_practitioner-md-hdp.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.identifier[0] (l18/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm85" class="flip" onclick="flip('m85')">Show Reasoning</span><div id="m85" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.identifier[0]: discriminator = true and ('http://practitioners.health.gov.il/Practitioners' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://practitioners.health.gov.il/Nurses' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/molsa-socialworker-lic' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/il-national-id' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/pna-national-id' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/encrypted-pna-id-primary-moh' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and (system memberOf 'http://fhir.health.gov.il/ValueSet/passport-uri')</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/encrypted-id-primary-moh' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and (system memberOf 'http://fhir.health.gov.il/ValueSet/passport-enc-uri')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0].value.ofType(code) (l48/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#he' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0] (l46/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm87" class="flip" onclick="flip('m87')">Show Reasoning</span><div id="m87" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.identifier[0] (l18/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm88" class="flip" onclick="flip('m88')">Show Reasoning</span><div id="m88" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.identifier[0]: discriminator = true and ('http://practitioners.health.gov.il/Practitioners' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://practitioners.health.gov.il/Nurses' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/molsa-socialworker-lic' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/il-national-id' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/pna-national-id' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/encrypted-pna-id-primary-moh' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and (system memberOf 'http://fhir.health.gov.il/ValueSet/passport-uri')</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/encrypted-id-primary-moh' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and (system memberOf 'http://fhir.health.gov.il/ValueSet/passport-enc-uri')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0] (l46/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm89" class="flip" onclick="flip('m89')">Show Reasoning</span><div id="m89" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.2.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner (l1/c2)</b></td><td><b>error</b></td><td title="http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner#prac-ident-enc"><b>Constraint failed: prac-ident-enc: 'identifier must contain at least one member with either: 1.system = http://fhir.health.gov.il/identifier/encrypted-id-primary-moh; OR a value from PassportEncUri' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l31"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\ServiceRequest-chest-xray.json">C:\FHIR\HDP\examples\ServiceRequest-chest-xray.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l32"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Specimen-hdp-specimen-pathology-biopsy-1.json">C:\FHIR\HDP\examples\Specimen-hdp-specimen-pathology-biopsy-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Specimen (l1/c2)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner is not allowed to be used at this point (allowed = e:Specimen.processing; this element is [Specimen])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Specimen.collection.collector (l52/c6)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Specimen (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l33"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Specimen-pathology.json">C:\FHIR\HDP\examples\Specimen-pathology.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Specimen.meta.profile[0] (l13/c90)</b></td><td><b>information</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-laboratoryTests' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Specimen.meta.security[0] (l6/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_13"><b>The Coding provided (http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratoryTests) was not found in the value set 'SecurityLabels' (http://hl7.org/fhir/ValueSet/security-labels|4.0.1), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = The provided code 'http://fhir.health.gov.il/cs/il-hdp-information-buckets#laboratoryTests: 'בדיקות מעבדה'' was not found in the value set 'http://hl7.org/fhir/ValueSet/security-labels|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Specimen.collection.collector (l43/c6)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Specimen.processing[0] (l72/c6)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://fhir.health.gov.il/StructureDefinition/ext-processing-location is not allowed to be used at this point (allowed = e:Specimen; this element is [BackboneElement, Specimen.processing])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Specimen (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Specimen.meta.profile[0] (l1/c2)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_ERROR_NETWORK"><b>Profile reference 'http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-laboratoryTests' has not been checked because it could not be found, and the host hdp.fhir.health.gov.il cannot be found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l34"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Specimen-serum-patient.json">C:\FHIR\HDP\examples\Specimen-serum-patient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Specimen.collection.bodySite.coding[0].code (l80/c6)</b></td><td><b>error</b></td><td title="Unknown_Code_in_Version"><b>Unknown code '36765003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Specimen.processing[0] (l91/c6)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://fhir.health.gov.il/StructureDefinition/ext-processing-location is not allowed to be used at this point (allowed = e:Specimen; this element is [BackboneElement, Specimen.processing])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Specimen.collection.bodySite (l80/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#36765003)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l35"> </a>
+<h2><a href="file:C:\FHIR\HDP\examples\Substance-blood-sample.json">C:\FHIR\HDP\examples\Substance-blood-sample.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Substance.identifier[0].system (l22/c57)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE"><b>Example URLs are not allowed in this context (http://hospital.example.org/substances)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Substance.code.coding[0].display (l26/c4)</b></td><td><b>error</b></td><td title="Display_Name_for__should_be_one_of__instead_of"><b>Wrong Display Name 'Blood specimen (substance)' for http://snomed.info/sct#119297000. Valid display is one of 3 choices: 'Blood specimen' (en), 'Blood specimen (specimen)' (en) or 'Blood sample' (en) (for the language(s) 'en')</b></td>
+   </tr>
+</table>

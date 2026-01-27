@@ -1,0 +1,110 @@
+{
+  "resourceType": "Specimen",
+  "id": "hdp-specimen-pathology-biopsy-1",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "pathology",
+        "display": "פתולוגיה"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-pathology"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-location",
+      "valueReference": {
+        "reference": "Location/pathology-lab"
+      }
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner",
+      "valueReference": {
+        "reference": "Practitioner/pathologist"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://specimen-ids.net/specimen-ids",
+      "value": "12345-biopsy-001"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "309506005",
+        "system": "http://snomed.info/sct",
+        "display": "Skin excision biopsy specimen (specimen)"
+      }
+    ],
+    "text": "Skin excision biopsy specimen (specimen)"
+  },
+  "request": [
+    {
+      "reference": "ServiceRequest/987"
+    }
+  ],
+  "collection": {
+    "collector": {
+      "extension": [
+        {
+          "valueReference": {
+            "reference": "Practitioner/surgeon-dr-jones",
+            "type": "Practitioner"
+          },
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-specimen-collector-reference"
+        }
+      ],
+      "type": "Practitioner"
+    },
+    "quantity": {
+      "value": 15,
+      "unit": "g"
+    },
+    "bodySite": {
+      "coding": [
+        {
+          "code": "368209003",
+          "system": "http://snomed.info/sct",
+          "display": "Right upper arm structure (body structure)"
+        }
+      ],
+      "text": "Right upper arm structure (body structure)"
+    },
+    "collectedDateTime": "2020-12-06T06:30:00+03:00"
+  },
+  "processing": [
+    {
+      "timeDateTime": "2020-12-06T12:35:00+03:00"
+    }
+  ],
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "700855008",
+            "system": "http://snomed.info/sct",
+            "display": "Tissue/fluid collection bag, sterile (physical object)"
+          }
+        ],
+        "text": "Tissue/fluid collection bag, sterile (physical object)"
+      },
+      "specimenQuantity": {
+        "value": 15,
+        "code": "g",
+        "system": "http://unitsofmeasure.org",
+        "unit": "g"
+      }
+    }
+  ],
+  "status": "available",
+  "subject": {
+    "reference": "Patient/patient-with-israeli-id"
+  },
+  "receivedTime": "2020-12-06T11:30:00+03:00"
+}

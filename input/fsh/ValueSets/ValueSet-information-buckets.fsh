@@ -2,6 +2,7 @@ ValueSet: ILHDPInformationBuckets
 Id: il-hdp-information-buckets
 Title: "ILHDP Information Buckets"
 Description: "A list of information Buckets for meta-security"
+* insert ConformanceMetadata
 * ^url = $vs-info-buckets
 * ^status = #draft
 * ^experimental = false

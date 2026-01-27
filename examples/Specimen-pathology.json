@@ -1,0 +1,108 @@
+{
+  "resourceType": "Specimen",
+  "id": "hdp-specimen-pathology-biopsy-1",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "laboratoryTests",
+        "display": "בדיקות מעבדה"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-specimen-laboratoryTests"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://specimen-ids.net/specimen-ids",
+      "value": "12345-serum-001"
+    }
+  ],
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "code": "122590004",
+        "system": "http://snomed.info/sct",
+        "display": "Serum specimen from patient"
+      }
+    ],
+    "text": "Serum specimen from patient"
+  },
+  "subject": {
+    "reference": "Patient/patient-with-israeli-id",
+    "type": "Patient"
+  },
+  "request": [
+    {
+      "reference": "ServiceRequest/987"
+    }
+  ],
+  "collection": {
+    "collector": {
+      "extension": [
+        {
+          "valueReference": {
+            "reference": "Practitioner/nurse-jones",
+            "type": "Practitioner"
+          },
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-specimen-collector-reference"
+        }
+      ],
+      "type": "Practitioner"
+    },
+    "quantity": {
+      "value": 10,
+      "unit": "mL"
+    },
+    "bodySite": {
+      "coding": [
+        {
+          "code": "368209003",
+          "system": "http://snomed.info/sct",
+          "display": "Right upper arm structure (body structure)"
+        }
+      ],
+      "text": "Right upper arm structure (body structure)"
+    },
+    "collectedDateTime": "2024-12-06T03:30:00+00:00"
+  },
+  "processing": [
+    {
+      "extension": [
+        {
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-location",
+          "valueReference": {
+            "reference": "Location/hmo-lab"
+          }
+        },
+        {
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner",
+          "valueReference": {
+            "reference": "Practitioner/lab tech"
+          }
+        }
+      ],
+      "timeDateTime": "2024-12-06T09:35:00+00:00"
+    }
+  ],
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "706049005",
+            "system": "http://snomed.info/sct",
+            "display": "Blood tube"
+          }
+        ]
+      },
+      "specimenQuantity": {
+        "value": 5,
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      }
+    }
+  ]
+}

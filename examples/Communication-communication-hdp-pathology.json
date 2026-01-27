@@ -1,0 +1,39 @@
+{
+  "resourceType": "Communication",
+  "id": "communication-hdp-pathology",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "pathology",
+        "display": "פתולוגיה"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-communication-pathology"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Pathology communication sent to recipient regarding patient.</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/communications",
+      "value": "PATH-COMM-2025-0001"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Organization/example"
+    },
+    {
+      "reference": "Practitioner/example"
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "received": "2025-09-10T14:45:00+02:00"
+}

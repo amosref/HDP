@@ -1,0 +1,87 @@
+{
+  "resourceType": "Condition",
+  "id": "burnt-ear",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "diagnoses",
+        "display": "אבחנות"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-condition"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "encounter-diagnosis",
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "display": "Encounter Diagnosis"
+        },
+        {
+          "code": "439401001",
+          "system": "http://snomed.info/sct",
+          "display": "Diagnosis"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "39065001",
+        "system": "http://snomed.info/sct",
+        "display": "Burn of ear"
+      }
+    ],
+    "text": "Burnt Ear"
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "49521004",
+          "system": "http://snomed.info/sct",
+          "display": "Left external ear structure"
+        }
+      ],
+      "text": "Left Ear"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/patient-with-israeli-id"
+  },
+  "recorder": {
+    "reference": "Patient/patient-with-israeli-id"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed"
+      }
+    ]
+  },
+  "severity": {
+    "coding": [
+      {
+        "code": "24484000",
+        "system": "http://snomed.info/sct",
+        "display": "Severe"
+      }
+    ]
+  },
+  "onsetDateTime": "2012-05-24",
+  "recordedDate": "2012"
+}

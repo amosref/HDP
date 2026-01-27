@@ -1,0 +1,95 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "chest-xray",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "diagnosticImaging",
+        "display": "בדיקות דימות"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-service-request"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "SR12345"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "363679005",
+          "system": "http://snomed.info/sct",
+          "display": "Imaging (procedure)"
+        }
+      ],
+      "text": "Imaging Order"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "30746-2",
+        "system": "http://loinc.org",
+        "display": "Portable XR Chest Views"
+      }
+    ],
+    "text": "Portable XR Chest Views"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "version": "http://snomed.info/sct/731000124108",
+          "code": "386663009",
+          "system": "http://snomed.info/sct",
+          "display": "Bicycle accident (event)"
+        }
+      ],
+      "text": "Bicycle accident"
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Organization/radiology-dept"
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/burnt-ear"
+    }
+  ],
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Chest X-Ray for Amy Shaw</div>",
+    "status": "generated"
+  },
+  "supportingInfo": [
+    {
+      "reference": "Observation/hemoglobin-lab-test"
+    }
+  ],
+  "note": [
+    {
+      "text": "Patient is claustrophobic, please use sedation if needed."
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "subject": {
+    "reference": "Patient/patient-israeli",
+    "display": "Amy Shaw"
+  },
+  "encounter": {
+    "reference": "Encounter/home-visit"
+  },
+  "occurrenceDateTime": "2024-10-13",
+  "authoredOn": "2024-10-13T10:59:38-08:00",
+  "requester": {
+    "reference": "Practitioner/md"
+  },
+  "priority": "routine"
+}

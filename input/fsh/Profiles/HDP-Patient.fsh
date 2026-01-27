@@ -3,6 +3,9 @@ Parent: ILCorePatient
 Id: il-hdp-patient
 Title: "ILHDP Patient"
 Description: "Patient profile for HDP"
+* insert ConformanceMetadata
+* . obeys one-strong-identifier-warning
+* obeys check-identifiers
 * meta only ILHDPMeta
 * meta 1..1
 * meta.security[HDP] 1..1
@@ -14,8 +17,8 @@ Description: "Patient profile for HDP"
 * extension[hmo] 1..1
 * name.given 1..*
 * name.family 1..1
-* birthDate 1..1
-* gender 1..1
+// * birthDate 1..1 // already 1..1
+// * gender 1..1  // already 1..1
 * contact.organization only Reference(ILCoreOrganization or ILHDPOrganization)
 * generalPractitioner only Reference(ILCoreOrganization or ILCorePractitioner or ILCorePractitionerRole or ILHDPOrganization or ILHDPPractitioner or ILHDPPractitionerRole)
 * managingOrganization only Reference(ILCoreOrganization or ILHDPOrganization)

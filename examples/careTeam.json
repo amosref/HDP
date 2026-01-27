@@ -1,0 +1,104 @@
+{
+  "resourceType": "CareTeam",
+  "id": "hdp-careTeam",
+  "meta": {
+      "security":  [
+          {
+              "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+              "code": "practitioner",
+              "display": "מטפל"
+          }
+      ],
+      "profile":  [
+          "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-care-team"
+      ]
+  },
+  "contained": [
+    {
+      "resourceType": "Practitioner",
+      "id": "pr1",
+      "meta": {
+        "profile": [
+          "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner"
+        ]
+      },
+      "identifier": [
+        {
+          "system": "http://practitioners.health.gov.il/Practitioners",
+          "value": "1-1234"
+        }
+      ],
+      "name": [
+        {
+          "family": "Dietician",
+          "given": [
+            "Dorothy"
+          ]
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "value": "12345"
+    }
+  ],
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "LA27976-2",
+          "system": "http://loinc.org",
+          "display": "Encounter-focused care team"
+        }
+      ]
+    }
+  ],
+  "name": "Peter James Charlmers Care Plan for Inpatient Encounter",
+  "subject": {
+    "reference": "Patient/patient-immigrant",
+    "display": "הרצל לוי"
+  },
+  "encounter": {
+    "reference": "Encounter/community-consultation"
+  },
+  "period": {
+    "end": "2013-01-01"
+  },
+  "participant": [
+    {
+      "role": [
+        {
+          "text": "responsiblePerson"
+        }
+      ],
+      "member": {
+        "reference": "Patient/patient-immigrant",
+        "display": "Peter James Chalmers"
+      }
+    },
+    {
+      "role": [
+        {
+          "text": "adviser"
+        }
+      ],
+      "member": {
+        "reference": "#pr1",
+        "display": "Dorothy Dietition"
+      },
+      "onBehalfOf": {
+        "reference": "Organization/meir-hospital"
+      },
+      "period": {
+        "end": "2013-01-01"
+      }
+    }
+  ],
+  "managingOrganization": [
+    {
+      "reference": "Organization/meir-hospital"
+    }
+  ]
+}

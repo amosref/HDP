@@ -1,0 +1,57 @@
+{
+  "resourceType": "DeviceUseStatement",
+  "id": "device-use-statement-cpap",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "medications",
+        "display": "תרופות"
+      }
+    ],
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-device-use-statement"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Device use statement for patient: CPAP device for sleep apnea treatment.</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/deviceusestatement",
+      "value": "DEVUSE-2025-0001"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/example"
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/example"
+    },
+    {
+      "reference": "DocumentReference/example"
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/example"
+    },
+    {
+      "reference": "DiagnosticReport/example"
+    }
+  ],
+  "status": "active",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "source": {
+    "reference": "Practitioner/example"
+  },
+  "device": {
+    "reference": "Device/example"
+  }
+}

@@ -3,6 +3,7 @@ Parent: Meta
 Id: il-hdp-meta
 Title: "ILHDP Meta"
 Description: "Profile on Meta datatype for HDP with slicing on security"
+* insert ConformanceMetadata
 * security.system 1..1
 * security.code 1..1
 * security ^slicing.discriminator.type = #value
@@ -13,5 +14,4 @@ Description: "Profile on Meta datatype for HDP with slicing on security"
 * security[HDP].system 1..1
 * security[HDP].system = $info-buckets (exactly)
 * security[HDP].code 1..1
-* security[HDP].system = $info-buckets (exactly)
 * security[HDP] from $vs-info-buckets (required)

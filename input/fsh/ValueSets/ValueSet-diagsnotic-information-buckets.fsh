@@ -1,7 +1,8 @@
-ValueSet: DiagnosticReportHDPInformationBuckets
+ValueSet: ILHDPDiagnosticReportHDPInformationBuckets
 Id: il-hdp-diagnostic-report-information-buckets
 Title: "ILHDP DiagnosticReport Information Buckets"
 Description: "A list of information baskets for meta-security in ILHDPDiagnosticReport"
+* insert ConformanceMetadata
 * ^url = $vs-diagnostic-report-meta
 * ^status = #draft
 * ^experimental = false
@@ -9,3 +10,4 @@ Description: "A list of information baskets for meta-security in ILHDPDiagnostic
 * $info-buckets#diagnosticImaging "בדיקות דימות"
 * $info-buckets#genetics "גנטיקה"
 * $info-buckets#measurements "מדדים"
+* $info-buckets#pathology "פתולוגיה"
