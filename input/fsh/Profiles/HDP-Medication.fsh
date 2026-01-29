@@ -1,7 +1,7 @@
 Profile: ILHDPMedication
 Parent: ILCoreMedication
 Id: il-hdp-medication
-Title: "ILHDP Medication"
+Title: "ILHDP Medication Profile"
 Description: "Medication profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier

@@ -1,7 +1,7 @@
 Profile: ILHDPLocation
 Parent: ILCoreLocation
 Id: il-hdp-location
-Title: "ILHDP Location"
+Title: "ILHDP Location Profile"
 Description: "Location profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier-warning

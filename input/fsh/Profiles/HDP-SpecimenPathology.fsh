@@ -1,7 +1,7 @@
 Profile: ILHDPSpecimenPathology
 Parent: ILCoreSpecimen
 Id: il-hdp-specimen-pathology
-Title: "ILHDP Specimen Pathology"
+Title: "ILHDP Specimen Pathology Profile"
 Description: "Specimen-Pathology profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier

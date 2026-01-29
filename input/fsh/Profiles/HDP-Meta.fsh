@@ -1,7 +1,7 @@
 Profile: ILHDPMeta
 Parent: Meta
 Id: il-hdp-meta
-Title: "ILHDP Meta"
+Title: "ILHDP Meta Profile"
 Description: "Profile on Meta datatype for HDP with slicing on security"
 * insert ConformanceMetadata
 * security.system 1..1

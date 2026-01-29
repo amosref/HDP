@@ -1,7 +1,7 @@
 Profile: ILHDPDiagnosticReport
 Parent: ILCoreDiagnosticReport
 Id: il-hdp-diagnostic-report
-Title: "ILHDP DiagnosticReport"
+Title: "ILHDP DiagnosticReport Profile"
 Description: "DiagnosticReport profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier

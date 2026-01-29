@@ -1,7 +1,7 @@
 Profile: ILHDPCondition
 Parent: ILCoreCondition
 Id: il-hdp-condition
-Title: "ILHDP Condition"
+Title: "ILHDP Condition Profile"
 Description: "Condition profile for HDP"
 * obeys statuses-exist
 * insert ConformanceMetadata

@@ -1,7 +1,7 @@
 Profile: ILHDPPractitionerLinkage
 Parent: Linkage
 Id: il-hdp-practitioner-linkage
-Title: "ILHDP Practitioner Linkage"
+Title: "ILHDP Practitioner Linkage Profile"
 Description: "Linkage profile for Israeli HDP Practitioner resources"
 * insert ConformanceMetadata
 * meta only ILHDPMeta

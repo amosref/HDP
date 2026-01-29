@@ -1,7 +1,7 @@
 Profile: ILHDPSpecimenLab
 Parent: ILCoreSpecimen
 Id: il-hdp-specimen-lab
-Title: "ILHDP Specimen Lab"
+Title: "ILHDP Specimen Lab Profile"
 Description: "Specimen- profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier

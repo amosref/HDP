@@ -1,7 +1,7 @@
 Profile: ILHDPAllergyIntolerance
 Parent: ILCoreAllergyIntolerance
 Id: il-hdp-allergy-intolerance
-Title: "ILHDP AllergyIntolerance"
+Title: "ILHDP AllergyIntolerance Profile"
 Description: "AllergyIntolerance profile for HDP"
 * obeys statuses-exist
 * insert ConformanceMetadata

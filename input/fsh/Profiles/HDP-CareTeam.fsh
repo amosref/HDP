@@ -1,7 +1,7 @@
 Profile: ILHDPCareTeam
 Parent: ILCoreCareTeam
 Id: il-hdp-care-team
-Title: "ILHDP CareTeam"
+Title: "ILHDP CareTeam Profile"
 Description: "CareTeam profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier
