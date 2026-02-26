@@ -1,7 +1,7 @@
 Profile: ILHDPPatient
 Parent: ILCorePatient
 Id: il-hdp-patient
-Title: "ILHDP Patient"
+Title: "ILHDP Patient Profile"
 Description: "Patient profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier-warning

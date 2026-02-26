@@ -1,7 +1,7 @@
 Profile: ILHDPSubstance
 Parent: ILCoreSubstance
 Id: il-hdp-substance
-Title: "ILHDP Substance"
+Title: "ILHDP Substance Profile"
 Description: "Substance profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier

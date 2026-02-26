@@ -1,7 +1,7 @@
 Profile: ILHDPOrganization
 Parent: ILCoreOrganization
 Id: il-hdp-organization
-Title: "ILHDP Organization"
+Title: "ILHDP Organization Profile"
 Description: "Organization profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier-warning

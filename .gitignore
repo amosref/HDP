@@ -6,7 +6,7 @@ Thumbs.db
 /temp
 /template
 .DS_Store
-fsh-generated
+/input/resources
 temp
 jre
 node_modules

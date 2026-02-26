@@ -1,7 +1,7 @@
 Profile: ILHDPCommunicationPathology
 Parent: ILCoreCommunication
 Id: il-hdp-communication-pathology
-Title: "ILHDP Communication Pathology"
+Title: "ILHDP Communication Pathology Profile"
 Description: "Communication-Pathology profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier

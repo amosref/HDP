@@ -1,7 +1,7 @@
 Profile: ILHDPMedicationRequest
 Parent: ILCoreMedicationRequest
 Id: il-hdp-medication-request
-Title: "ILHDP MedicationRequest"
+Title: "ILHDP MedicationRequest Profile"
 Description: "MedicationRequest profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier
@@ -17,7 +17,6 @@ Description: "MedicationRequest profile for HDP"
 * subject 1..1
 * subject only Reference(ILHDPPatient)
 * authoredOn 1..1
-* dosageInstruction.text 0..1
 * courseOfTherapyType 1..1
 * requester only Reference(ILHDPPatient or ILHDPPractitioner or ILHDPPractitionerRole or ILCoreRelatedPerson or ILHDPOrganization or il-core-device or il-core-practitioner or il-core-practitioner-role or il-core-organization or il-core-related-person)
 * performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPPatient or ILCoreRelatedPerson or ILHDPCareTeam or il-core-device or il-core-practitioner or il-core-practitioner-role or il-core-organization or il-core-care-team)
@@ -28,7 +27,7 @@ Description: "MedicationRequest profile for HDP"
 // * medicationReference only Reference(il-core-medication or ILHDPMedication)
 * medication[x] only CodeableConcept or Reference(ILCoreMedication or ILHDPMedication)
 * dosageInstruction 1..*
-* dosageInstruction.text 0..1
+* dosageInstruction.text 1..1
 * dosageInstruction.doseAndRate 1..*
 * dosageInstruction.doseAndRate obeys medication-dose-rate-1
 * dosageInstruction.doseAndRate.dose[x] 0..1

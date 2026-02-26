@@ -1,7 +1,7 @@
 Profile: ILHDPMedicationStatement
 Parent: ILCoreMedicationStatement
 Id: il-hdp-medication-statement
-Title: "ILHDP MedicationStatement"
+Title: "ILHDP MedicationStatement Profile"
 Description: "MedicationStatement profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier
@@ -18,15 +18,15 @@ Description: "MedicationStatement profile for HDP"
 * extension[courseOfTherapyType] 1..1
 * subject 1..1
 * subject only Reference(ILHDPPatient)
-* dosage 1..*
+* dosage 0..*
 * dosage.text 0..1
-* dosage.doseAndRate 1..*
+* dosage.doseAndRate 0..*
 * dosage.doseAndRate obeys medication-dose-rate-1
 * dosage.doseAndRate.dose[x] 0..1
 * dosage.doseAndRate.rate[x] 0..1
 * dosage.site 0..1
 * dosage.method 0..1
-* dosage.route 1..1
+* dosage.route 0..1
 * basedOn only Reference(il-core-care-plan or ILCoreMedicationRequest or ILHDPMedicationRequest or ILCoreServiceRequest)
 * partOf only Reference(ILCoreMedicationAdministration or il-core-medication-dispense or ILCoreMedicationStatement or ILCoreProcedure or ILCoreObservation or ILHDPMedicationAdministration or ILHDPMedicationDispense or ILHDPMedicationStatement or ILCoreProcedure)
 * medication[x] only CodeableConcept or Reference(ILCoreMedication or ILHDPMedication)

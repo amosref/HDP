@@ -1,7 +1,7 @@
 Profile: ILHDPRelatedPerson
 Parent: ILCoreRelatedPerson
 Id: il-hdp-related-person
-Title: "ILHDP RelatedPerson"
+Title: "ILHDP RelatedPerson Profile"
 Description: "RelatedPerson profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier

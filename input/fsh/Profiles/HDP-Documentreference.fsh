@@ -1,7 +1,7 @@
 Profile: ILHDPDocumentReference
 Parent: ILCoreDocumentReference
 Id: il-hdp-document-reference
-Title: "ILHDP DocumentReference"
+Title: "ILHDP DocumentReference Profile"
 Description: "DocumentReference profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier

@@ -1,7 +1,7 @@
 Profile: ILHDPPractitionerRole
 Parent: ILCorePractitionerRole
 Id: il-hdp-practitioner-role
-Title: "ILHDP PractitionerRole"
+Title: "ILHDP PractitionerRole Profile"
 Description: "PractitionerRole profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier

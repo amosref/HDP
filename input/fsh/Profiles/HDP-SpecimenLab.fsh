@@ -1,7 +1,7 @@
 Profile: ILHDPSpecimenLab
 Parent: ILCoreSpecimen
 Id: il-hdp-specimen-lab
-Title: "ILHDP Specimen Lab"
+Title: "ILHDP Specimen Lab Profile"
 Description: "Specimen- profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier
@@ -9,7 +9,6 @@ Description: "Specimen- profile for HDP"
 * meta 1..1
 * meta.security[HDP].system 1..1
 * meta.security[HDP].code 1..1
-// * meta.security[HDP] from $vs-specimen-meta (required)
 * meta.security[HDP].system = $info-buckets (exactly)
 * meta.security[HDP].code = #laboratoryTests (exactly)
 * meta.security[HDP].display = "בדיקות מעבדה" (exactly)

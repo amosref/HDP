@@ -1,7 +1,7 @@
 Profile: ILHDPPractitioner
 Parent: ILCorePractitioner
 Id: il-hdp-practitioner
-Title: "ILHDP Practitioner"
+Title: "ILHDP Practitioner Profile"
 Description: "Practitioner profile for HDP"
 * insert ConformanceMetadata
 * . obeys one-strong-identifier-warning

@@ -1,7 +1,7 @@
 Profile: ILHDPObservationLab
 Parent: il-core-observation-lab
 Id: il-hdp-observation-lab
-Title: "ILHDP ObservationLab"
+Title: "ILHDP ObservationLab Profile"
 Description: "Observation Lab profile for HDP"
 * . obeys obs-lab-value-absent
 * insert ConformanceMetadata

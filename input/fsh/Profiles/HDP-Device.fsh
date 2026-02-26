@@ -1,7 +1,7 @@
 Profile: ILHDPDevice
 Parent: ILCoreDevice
 Id: il-hdp-device
-Title: "ILHDP Device Profile"
+Title: "ILHDP Device Profile Profile"
 Description: "HDP constraints and extensions on the Device Resource."
 * insert ConformanceMetadata
 * . obeys one-strong-identifier

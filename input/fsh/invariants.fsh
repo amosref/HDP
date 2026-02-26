@@ -48,3 +48,33 @@ Expression: "identifier.where(type.coding.where(system='http://fhir.health.gov.i
 // Description: "If dosage element is present, then at least one of its subelemnts: ['dose' or 'rate'] must be present."
 // Expression: "dose.exists() or rate.exists()"
 // Severity: #error
+
+Invariant: ilhdp-enc-reason
+Description: "Encounter must have a reasonCode or reasonReference."
+Severity: #error
+Expression: "reasonCode.exists() or reasonReference.exists()"
+
+Invariant: ilhdp-enc-period-start
+Description: "period.start must exist if status is not planned."
+Severity: #error
+Expression: "status = 'planned' or period.start.exists()"
+
+Invariant: ilhdp-enc-finished-period
+Description: "If status is finished then period.end or length must exist."
+Severity: #error
+Expression: "status != 'finished' or period.end.exists() or length.exists()"
+
+Invariant: ilhdp-enc-ambulatory-period
+Description: "For ambulatory encounters, at least one of period.start or period.end must be present."
+Severity: #error
+Expression: "period.start.exists() or period.end.exists()"
+
+Invariant: ilhdp-community-virtual-class
+Description: "If encounter type includes a virtual encounter, class must be VR."
+Severity: #error
+Expression: "type.where(coding.where(system='http://snomed.info/sct' and code='185316007').exists()).empty() or class.code = 'VR'"
+
+Invariant: ilhdp-enc-face-to-face-exclusive
+Description: "Face-to-face encounter type SHALL NOT be combined with virtual or without-patient-present types."
+Severity: #error
+Expression: "not(type.coding.where(system='http://snomed.info/sct' and code='1258986006').exists() and (type.coding.where(memberOf('http://fhir.health.gov.il/ValueSet/il-core-virtual-type')).exists() or type.coding.where(system='http://fhir.health.gov.il/cs/il-core-encounter-type' and code='without-patient-present').exists()))"
