@@ -26,3 +26,4 @@ Description: "Israel Health Data Platform Linkage Profile"
 
 * item[source].type = #source (exactly)
 * item[source].type 1..1
+* insert ConformanceMetadata

@@ -1,4 +1,3 @@
-Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 
 Instance: hospital-unit
 InstanceOf: ILHDPLocation
@@ -18,14 +17,14 @@ Usage: #example
 * address.text = "העליה השנייה 8 חיפה"
 * address.city = "חיפה"
 * address.city.extension.url = "http://fhir.health.gov.il/StructureDefinition/ext-city-code"
-* address.city.extension.valueCodeableConcept = $city-symbol#4000
+* address.city.extension.valueCodeableConcept = $city-code#4000
 * address.postalCode = "3109601"
 * address.country = "IL"
 * identifier.system = "http://rambam.co.il/department"
 * identifier.value = "010011"
 * status = #active
 * name = "פנימית א' בית חולים רמב\"ם"
-* type = $v3-RoleCode#HU
+* type = http://terminology.hl7.org/CodeSystem/v3-RoleCode#HU
 * description = "Second floor of the old south wing"
 * telecom.system = #phone
 * telecom.value = "04-7772518"

@@ -26,4 +26,5 @@ Description: "DocumentReference profile for HDP"
 * relatesTo.target only Reference(ILCoreDocumentReference or ILHDPDocumentReference)
 * context.sourcePatientInfo only Reference(ILHDPPatient)
 * content.attachment.contentType 1..1
+* content.attachment.contentType from $vs-hdp-doc-mime-types (required)
 * content.attachment.creation 1..1

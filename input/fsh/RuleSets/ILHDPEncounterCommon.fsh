@@ -9,9 +9,9 @@ RuleSet: ILHDPEncounterCommon
 
 * type 1..*
 * type contains
-    hospitalization 0..* and
-    inpatient-care-segment 0..* and
-    community-hmo-ambulatory 0..*
+    hospitalization 0..1 and
+    inpatient-care-segment 0..1 and
+    community-hmo-ambulatory 0..1
 * type[hospitalization] ^short = "Hospitalization encounter type"
 * type[hospitalization] ^definition = "Marks a top-level hospitalization encounter."
 * type[hospitalization] ^patternCodeableConcept.coding.system = $il-core-encounter-type
@@ -25,7 +25,9 @@ RuleSet: ILHDPEncounterCommon
 * type[community-hmo-ambulatory] ^patternCodeableConcept.coding.system = $il-core-encounter-type
 * type[community-hmo-ambulatory] ^patternCodeableConcept.coding.code = #community-hmo-ambulatory-hdp
 //todo: add comments for proper use of face-to-face encounter slice (SHOULD be added for all non-virtual encounters unless there is a specific reason not to)
-
+* type[face-to-face] ^short = "Face-to-face encounter type"
+* type[face-to-face] ^definition = "Face-to-face encounter type."
+* type[face-to-face] ^comment = "SHALL NOT be combined with virtual-encounters or without-patient-present in HDP encounters."
 * period 1..1
 * serviceType 1..1
 * subject 1..1

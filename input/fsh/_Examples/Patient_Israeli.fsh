@@ -32,9 +32,9 @@ Usage: #example
 * address.text = "אלכסנדר פן 1א' דירה 4 תל אביב"
 * address.line = "אלכסנדר פן 1א"
 * address.city = "תל אביב"
-// * address.extension[0].coding = $city-symbol
+// * address.extension[0].coding = $city-code
 // * address.city.extension[cityCode].url = $ext-ct
-* address.city.extension[cityCode].valueCodeableConcept = $city-symbol#5000
+* address.city.extension[cityCode].valueCodeableConcept = $city-code#5000
 // TODO - add extension[cityCode].system
 
 * address.line.extension[streetName].valueString = "פן אלכסנדר"

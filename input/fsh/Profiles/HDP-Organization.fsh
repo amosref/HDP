@@ -16,4 +16,4 @@ Description: "Organization profile for HDP"
 * identifier 1..*
 * type 1..*
 * type from $vs-il-hdp-organization-types (extensible)
-* partOf only Reference(il-core-organization or ILHDPOrganization)
+* partOf only Reference(ILCoreOrganization or ILHDPOrganization)

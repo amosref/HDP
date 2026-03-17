@@ -11,6 +11,9 @@ Usage: #example
 * meta.security[HDP].code = #organization
 * meta.security[HDP].display = "Organization"
 
+* identifier[+].system = "http://hospital1.example.org/locations"
+* identifier[=].value = "HOSP1-WARD-A-NU2"
+
 * status = #active
 * name = "Hospital1 Ward A Nursing Unit 2"
 * type = $il-core-hospital-nursing-unit#il-core-hospital-nursing-unit "Hospital nursing unit"

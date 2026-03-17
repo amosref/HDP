@@ -1,5 +1,5 @@
 Profile: ILHDPServiceRequest
-Parent: il-core-service-request
+Parent: ILCoreServiceRequest
 Id: il-hdp-service-request
 Title: "ILHDP ServiceRequest Profile"
 Description: "Defines the ServiceRequest resource for HDP compliance."
@@ -28,9 +28,9 @@ Description: "Defines the ServiceRequest resource for HDP compliance."
 * note 1..*
 * text 1..1
 
-* subject only Reference(ILHDPPatient or il-core-group or ILHDPLocation)
-* encounter only Reference(il-core-encounter)
-* requester only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPPatient or ILHDPRelatedPerson or il-core-device)
-* performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or ILHDPPatient or ILHDPRelatedPerson or il-core-device)
+* subject only Reference(ILHDPPatient or ILCoreGroup or ILHDPLocation)
+* encounter only Reference(ILCoreEncounter)
+* requester only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPPatient or ILHDPRelatedPerson or ILCoreDevice)
+* performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or ILHDPPatient or ILHDPRelatedPerson or ILCoreDevice)
 * reasonReference only Reference(ILHDPCondition or ILHDPObservation or ILHDPDiagnosticReport or ILHDPDocumentReference)
-* supportingInfo only Reference(ILHDPCondition or ILHDPObservation or ILHDPDocumentReference or ILHDPMedication or il-core-device or il-core-procedure)
+* supportingInfo only Reference(ILHDPCondition or ILHDPObservation or ILHDPDocumentReference or ILHDPMedication or ILCoreDevice or ILCoreProcedure)

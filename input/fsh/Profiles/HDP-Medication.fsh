@@ -14,6 +14,6 @@ Description: "Medication profile for HDP"
 * meta.security[HDP].code = #medications (exactly)
 * meta.security[HDP].display = "תרופות" (exactly)
 * identifier 1..*
-* identifier.assigner only Reference(ILHDPOrganization or il-core-organization)
-* manufacturer only Reference(ILHDPOrganization  or il-core-organization)
-* ingredient.itemReference only Reference(il-core-substance or ILHDPMedication or il-core-medication)
+* identifier.assigner only Reference(ILHDPOrganization or ILCoreOrganization)
+* manufacturer only Reference(ILHDPOrganization  or ILCoreOrganization)
+* ingredient.itemReference only Reference(ILCoreSubstance or ILHDPMedication or ILCoreMedication)

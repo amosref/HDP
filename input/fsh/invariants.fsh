@@ -77,4 +77,4 @@ Expression: "type.where(coding.where(system='http://snomed.info/sct' and code='1
 Invariant: ilhdp-enc-face-to-face-exclusive
 Description: "Face-to-face encounter type SHALL NOT be combined with virtual or without-patient-present types."
 Severity: #error
-Expression: "not(type.coding.where(system='http://snomed.info/sct' and code='1258986006').exists() and (type.coding.where(memberOf('http://fhir.health.gov.il/ValueSet/il-core-virtual-type')).exists() or type.coding.where(system='http://fhir.health.gov.il/cs/il-core-encounter-type' and code='without-patient-present').exists()))"
+Expression: "not(type.coding.where(system='http://snomed.info/sct' and code='1258986006').exists() and (type.coding.where($this.memberOf('http://fhir.health.gov.il/ValueSet/il-core-virtual-type')).exists() or type.coding.where(system='http://fhir.health.gov.il/cs/il-core-encounter-type' and code='without-patient-present').exists()))"

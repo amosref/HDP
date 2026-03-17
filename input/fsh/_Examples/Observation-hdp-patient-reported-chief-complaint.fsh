@@ -11,6 +11,9 @@ Usage: #example
 * meta.security[HDP].code = #encounterInformation
 * meta.security[HDP].display = "Encounter information"
 
+* identifier[+].system = "http://hmo1.example.org/observations"
+* identifier[=].value = "HMO1-CC-GP-2024-0001"
+
 * status = #final
 * code = $loinc#8661-1 "Chief complaint - Reported"
 * valueString = "Patient came in for diabetes follow-up and medication review. For the past week had increased thirst, waking at night to urinate, and mild fatigue. No fever, no chest pain, no shortness of breath."

@@ -9,6 +9,7 @@ Description: "HDP wrapper for patient-reported chief complaint observation with 
 * ^status = #draft
 
 * insert HDPInformationBucketSecurity
+* identifier 1..*
 
 * basedOn only Reference(ILCoreCarePlan or ILCoreDeviceRequest or ILCoreImmunizationRecommendation or ILCoreMedicationRequest or ILCoreNutritionOrder or ILCoreServiceRequest or $ILHDPServiceRequest)
 * partOf only Reference(ILCoreMedicationAdministration or ILCoreMedicationDispense or ILCoreProcedure or ILCoreImmunization or ILCoreImagingStudy or ILCoreMedicationStatement)

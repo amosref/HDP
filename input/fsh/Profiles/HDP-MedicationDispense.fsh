@@ -37,5 +37,5 @@ Description: "MedicationDispense profile for HDP"
 * whenHandedOver 1..1
 // * performer 1..1
 * medication[x] only CodeableConcept or Reference(ILCoreMedication or ILHDPMedication)
-// * medicationReference only Reference(il-core-medication or ILHDPMedication)
+// * medicationReference only Reference(ILCoreMedication or ILHDPMedication)
 

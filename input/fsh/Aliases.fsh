@@ -9,7 +9,6 @@ Alias: $ext-qualification-practice =  http://fhir.health.gov.il/StructureDefinit
 Alias: $info-buckets = http://fhir.health.gov.il/cs/il-hdp-information-buckets
 Alias: $ucum =         http://unitsofmeasure.org
 Alias: $obs-cat =      http://terminology.hl7.org/CodeSystem/observation-category
-Alias: $city-code =                     http://fhir.health.gov.il/cs/city-symbol
 
 // VSs
 Alias: $vs-info-buckets =  http://fhir.health.gov.il/ValueSet/il-hdp-information-buckets
@@ -23,6 +22,7 @@ Alias: $vs-diagnostic-report-meta =  http://hdp.fhir.health.gov.il/ValueSet/il-h
 Alias: $vs-document-reference-meta =  http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-reference-information-buckets
 Alias: $vs-hdp-document-types = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types
 Alias: $vs-il-hdp-organization-types = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-organization-types
+Alias: $vs-hdp-doc-mime-types = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-doc-mime-types
 
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc =                         http://loinc.org
@@ -30,7 +30,7 @@ Alias: $data-absent-reason =            http://hl7.org/fhir/StructureDefinition/
 Alias: $DAB-CS =                        http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $il-id =                         http://fhir.health.gov.il/identifier/il-national-id
 Alias: $payer =                         http://fhir.health.gov.il/cs/paying-entity-moh
-Alias: $city-symbol =                     http://fhir.health.gov.il/cs/city-symbol
+Alias: $city-code =                     http://fhir.health.gov.il/cs/city-symbol
 Alias: $alternet-reference =            http://hl7.org/fhir/StructureDefinition/alternate-reference
 
 // IL-HDP profiles
@@ -70,16 +70,17 @@ Alias: $institution-type-moh                         = http://fhir.health.gov.il
 Alias: $patient-release-type-moh                     = http://fhir.health.gov.il/cs/patient-release-type-moh
 Alias: $patient-visit-reason-moh                     = http://fhir.health.gov.il/cs/patient-visit-reason-moh
 Alias: $v3-ActCode                                   = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $hdp-mime-types =  urn:ietf:bcp:13
 
 // ValueSets
 Alias: $vs-il-core-diagnosis-role                    = http://fhir.health.gov.il/ValueSet/il-core-diagnosis-role
-Alias: $vs-il-hdp-information-buckets                = http://fhir.health.gov.il/ValueSet/il-hdp-information-buckets
 Alias: $vs-patient-release-type-moh                  = http://fhir.health.gov.il/ValueSet/patient-release-type-moh
 
 
 Alias: $il-core-diagnosis-role       = http://fhir.health.gov.il/cs/il-core-diagnosis-role
 Alias: $nurse-license-moh            = http://practitioners.health.gov.il/Nurses
 Alias: $practitioner-license-moh     = http://practitioners.health.gov.il/Practitioners
+
 
 // to DELETE
 Alias: $ext-device-dispense-when-handed-over = http://fhir.health.gov.il/StructureDefinition/ext-device-dispense-when-handed-over

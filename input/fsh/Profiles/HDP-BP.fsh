@@ -18,6 +18,6 @@ Description: "Blood Pressure profile for HDP compliance."
 * meta.security[HDP].display = "מדדים" (exactly)
 * identifier 1..*
 * subject only Reference(ILHDPPatient)
-* encounter only Reference(il-core-encounter)
+* encounter only Reference(ILCoreEncounter)
 * performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or ILHDPPatient or ILHDPRelatedPerson)
 * device only Reference(ILHDPDevice or DeviceMetric)

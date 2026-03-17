@@ -27,8 +27,8 @@ Description: "MedicationStatement profile for HDP"
 * dosage.site 0..1
 * dosage.method 0..1
 * dosage.route 0..1
-* basedOn only Reference(il-core-care-plan or ILCoreMedicationRequest or ILHDPMedicationRequest or ILCoreServiceRequest)
-* partOf only Reference(ILCoreMedicationAdministration or il-core-medication-dispense or ILCoreMedicationStatement or ILCoreProcedure or ILCoreObservation or ILHDPMedicationAdministration or ILHDPMedicationDispense or ILHDPMedicationStatement or ILCoreProcedure)
+* basedOn only Reference(ILCoreCarePlan or ILCoreMedicationRequest or ILHDPMedicationRequest or ILCoreServiceRequest)
+* partOf only Reference(ILCoreMedicationAdministration or ILCoreMedicationDispense or ILCoreMedicationStatement or ILCoreProcedure or ILCoreObservation or ILHDPMedicationAdministration or ILHDPMedicationDispense or ILHDPMedicationStatement or ILCoreProcedure)
 * medication[x] only CodeableConcept or Reference(ILCoreMedication or ILHDPMedication)
 // * medicationReference only Reference(ILCoreMedication or ILHDPMedication)
 * subject only Reference(ILHDPPatient)

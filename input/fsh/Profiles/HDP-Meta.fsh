@@ -8,7 +8,7 @@ Description: "Profile on Meta datatype for HDP with slicing on security"
 * security.code 1..1
 * security ^slicing.discriminator.type = #value
 * security ^slicing.discriminator.path = "system"
-* security ^slicing.rules = #closed
+* security ^slicing.rules = #open
 * security ^slicing.description = "ILHDP codes only"
 * security contains HDP 1..1
 * security[HDP].system 1..1

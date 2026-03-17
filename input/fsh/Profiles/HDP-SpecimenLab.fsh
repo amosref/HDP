@@ -15,7 +15,7 @@ Description: "Specimen- profile for HDP"
 * identifier 1..*
 * type 1..1
 * subject 1..1
-* subject only Reference(ILHDPPatient or il-core-device or ILHDPLocation or il-core-location or il-core-substance)
+* subject only Reference(ILHDPPatient or ILCoreDevice or ILHDPLocation or ILCoreLocation or ILCoreSubstance)
 * parent only Reference(ILCoreSpecimen or ILHDPSpecimenLab)
 * receivedTime 0..1
 * request 1..*

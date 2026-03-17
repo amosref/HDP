@@ -11,6 +11,9 @@ Usage: #example
 * meta.security[HDP].code = #encounterInformation
 * meta.security[HDP].display = "Encounter information"
 
+* identifier[+].system = "http://hospital1.example.org/observations"
+* identifier[=].value = "HOSP1-CC-ADM-2024-0001"
+
 * status = #final
 * code = $loinc#8661-1 "Chief complaint - Reported"
 * valueString = "Fever, cough, and shortness of breath for two days."

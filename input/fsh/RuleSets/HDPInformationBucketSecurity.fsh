@@ -8,5 +8,5 @@ RuleSet: HDPInformationBucketSecurity
 * meta.security[HDP] ^short = "HDP information bucket"
 * meta.security[HDP] ^definition = "Security label identifying the HDP information bucket for this resource."
 * meta.security[HDP].system = $info-buckets
-* meta.security[HDP] from $vs-il-hdp-information-buckets (required)
+* meta.security[HDP] from $vs-info-buckets (required)
 * meta.security[HDP].code 1..1

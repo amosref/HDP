@@ -18,9 +18,9 @@ Description: "DiagnosticReport profile for HDP"
 * meta.security[HDP].system = $info-buckets (exactly)
 * identifier 1..*
 * subject 1..1
-* subject only Reference(ILHDPPatient or il-core-device or ILHDPLocation or il-core-location)
-* basedOn only Reference(il-core-care-plan or ILCoreImmunizationRecommendation or ILHDPMedicationRequest or ILCoreNutritionOrder or il-core-service-request or il-core-medication-request)
-* performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or il-core-practitioner or il-core-practitioner-role or il-core-organization or il-core-care-team)
-* resultsInterpreter only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or il-core-practitioner or il-core-practitioner-role or il-core-organization or il-core-care-team)
+* subject only Reference(ILHDPPatient or ILCoreDevice or ILHDPLocation or ILCoreLocation)
+* basedOn only Reference(ILCoreCarePlan or ILCoreImmunizationRecommendation or ILHDPMedicationRequest or ILCoreNutritionOrder or ILCoreServiceRequest or ILCoreMedicationRequest)
+* performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam)
+* resultsInterpreter only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam)
 * specimen only Reference(ILCoreSpecimen or ILHDPSpecimenLab)
 * result only Reference(ILCoreObservation or ILHDPObservationLab)

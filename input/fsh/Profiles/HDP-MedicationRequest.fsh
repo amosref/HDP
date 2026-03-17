@@ -18,13 +18,13 @@ Description: "MedicationRequest profile for HDP"
 * subject only Reference(ILHDPPatient)
 * authoredOn 1..1
 * courseOfTherapyType 1..1
-* requester only Reference(ILHDPPatient or ILHDPPractitioner or ILHDPPractitionerRole or ILCoreRelatedPerson or ILHDPOrganization or il-core-device or il-core-practitioner or il-core-practitioner-role or il-core-organization or il-core-related-person)
-* performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPPatient or ILCoreRelatedPerson or ILHDPCareTeam or il-core-device or il-core-practitioner or il-core-practitioner-role or il-core-organization or il-core-care-team)
-* recorder only Reference(ILHDPPractitioner or ILHDPPractitionerRole or il-core-practitioner or il-core-practitioner-role)
+* requester only Reference(ILHDPPatient or ILHDPPractitioner or ILHDPPractitionerRole or ILCoreRelatedPerson or ILHDPOrganization or ILCoreDevice or ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreRelatedPerson)
+* performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPPatient or ILCoreRelatedPerson or ILHDPCareTeam or ILCoreDevice or ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam)
+* recorder only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILCorePractitioner or ILCorePractitionerRole)
 * reasonReference only Reference(ILHDPCondition or ILCoreObservation)
-* basedOn only Reference(il-core-care-plan or ILHDPMedicationRequest or il-core-service-request or il-core-immunization-recommendation or il-core-medication-request)
-* reportedReference only Reference(ILHDPPatient or ILHDPPractitioner or il-core-practitioner or ILHDPPractitionerRole or il-core-practitioner-role or il-core-related-person or ILHDPOrganization or il-core-organization)
-// * medicationReference only Reference(il-core-medication or ILHDPMedication)
+* basedOn only Reference(ILCoreCarePlan or ILHDPMedicationRequest or ILCoreServiceRequest or ILCoreImmunizationRecommendation or ILCoreMedicationRequest)
+* reportedReference only Reference(ILHDPPatient or ILHDPPractitioner or ILCorePractitioner or ILHDPPractitionerRole or ILCorePractitionerRole or ILCoreRelatedPerson or ILHDPOrganization or ILCoreOrganization)
+// * medicationReference only Reference(ILCoreMedication or ILHDPMedication)
 * medication[x] only CodeableConcept or Reference(ILCoreMedication or ILHDPMedication)
 * dosageInstruction 1..*
 * dosageInstruction.text 1..1

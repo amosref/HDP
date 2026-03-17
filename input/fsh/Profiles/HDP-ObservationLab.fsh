@@ -1,5 +1,5 @@
 Profile: ILHDPObservationLab
-Parent: il-core-observation-lab
+Parent: ILCoreObservationLab
 Id: il-hdp-observation-lab
 Title: "ILHDP ObservationLab Profile"
 Description: "Observation Lab profile for HDP"
@@ -16,17 +16,17 @@ Description: "Observation Lab profile for HDP"
 * subject 1..1
 * subject.identifier 1..1
 * subject only Reference(ILHDPPatient) 
-* basedOn only Reference(il-core-care-plan or il-core-device-request or ILHDPMedicationRequest or il-core-immunization-recommendation or ILHDPMedicationRequest or il-core-nutrition-order or il-core-service-request or il-core-medication-request)
+* basedOn only Reference(ILCoreCarePlan or ILCoreDeviceRequest or ILHDPMedicationRequest or ILCoreImmunizationRecommendation or ILHDPMedicationRequest or ILCoreNutritionOrder or ILCoreServiceRequest or ILCoreMedicationRequest)
 * basedOn.identifier 1..1
-// * performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or ILHDPPatient or il-core-related-person or il-core-practitioner or il-core-practitioner-role or il-core-organization or il-core-care-team)
-// * performer only Reference(ILHDPPractitioner or il-core-practitioner or ILHDPOrganization or il-core-organization)
-* encounter only Reference(il-core-encounter)
-* partOf only Reference(ILHDPMedicationAdministration or ILHDPMedicationStatement or ILHDPMedicationDispense or il-core-immunization or il-core-imaging-study or il-core-medication-statement)
-* hasMember only Reference(il-core-observation or il-core-questionnaire-response or MolecularSequence)
-* derivedFrom only Reference(ILHDPDocumentReference or il-core-document-reference or il-core-imaging-study or il-core-media or il-core-questionnaire-response or ILHDPObservationLab or il-core-molecular-sequence)
+// * performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or ILHDPPatient or ILCoreRelatedPerson or ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam)
+// * performer only Reference(ILHDPPractitioner or ILCorePractitioner or ILHDPOrganization or ILCoreOrganization)
+* encounter only Reference(ILCoreEncounter)
+* partOf only Reference(ILHDPMedicationAdministration or ILHDPMedicationStatement or ILHDPMedicationDispense or ILCoreImmunization or ILCoreImagingStudy or ILCoreMedicationStatement)
+* hasMember only Reference(ILCoreObservation or ILCoreQuestionnaireResponse or MolecularSequence)
+* derivedFrom only Reference(ILHDPDocumentReference or ILCoreDocumentReference or ILCoreImagingStudy or ILCoreMedia or ILCoreQuestionnaireResponse or ILHDPObservationLab or ILCoreMolecularSequence)
 * specimen 1..1
 * specimen only Reference(ILHDPSpecimenLab)
-* device only Reference(il-core-device or DeviceMetric)
+* device only Reference(ILCoreDevice or DeviceMetric)
 * code 1..1
 * effectiveDateTime 1..1
 * value[x] 0..1

@@ -9,6 +9,7 @@ Description: "HDP wrapper for nursing unit locations with security tagging"
 * ^status = #draft
 
 * insert HDPInformationBucketSecurity
+* identifier 1..*
 
 * managingOrganization only Reference($ILOrganization or $ILHDPOrganization)
 * partOf only Reference($ILLocation or $ILLocationNursingUnit or $ILHDPLocation or $ILHDPLocationNursingUnit)

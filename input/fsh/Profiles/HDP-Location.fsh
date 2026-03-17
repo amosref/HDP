@@ -13,6 +13,6 @@ Description: "Location profile for HDP"
 * meta.security[HDP].code 1..1
 * meta.security[HDP].code = #organization (exactly)
 * meta.security[HDP].display = "יחידה ארגונית" (exactly)
-* managingOrganization only Reference(il-core-organization or ILHDPOrganization)
+* managingOrganization only Reference(ILCoreOrganization or ILHDPOrganization)
 * identifier 1..*
-* partOf only Reference(il-core-location or ILHDPLocation)
+* partOf only Reference(ILCoreLocation or ILHDPLocation)
