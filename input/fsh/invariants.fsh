@@ -69,6 +69,11 @@ Description: "For ambulatory encounters, at least one of period.start or period.
 Severity: #error
 Expression: "period.start.exists() or period.end.exists()"
 
+Invariant: ilhdp-enc-ambulatory-class-participant
+Description: "If encounter class is ambulatory (AMB), at least one participant must be present."
+Severity: #error
+Expression: "class.where(code='AMB').exists() implies participant.exists()"
+
 Invariant: ilhdp-community-virtual-class
 Description: "If encounter type includes a virtual encounter, class must be VR."
 Severity: #error

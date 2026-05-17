@@ -386,7 +386,7 @@ The participant type codes used in this IG are summarized in [section 8.4](#84-k
 Profile-specific expectations include:
 
 - `ILHDPEncounterHospitalization`: participants are optional and MAY include clinicians not associated with a specific child segment.
-- `ILHDPEncounterInpatientCareSegment`: participants are required and will ordinarily include the practitioners or practitioner roles directly involved in care during that segment.
+- `ILHDPEncounterInpatientCareSegment`: SHOULD include the practitioners or practitioner roles directly involved in care during that segment. If class is ambulatory (AMB), at least one participant SHALL be present. `ilhdp-enc-ambulatory-class-participant`.
 - `ILHDPEncounterCommunityHMOAmbulatory`: participants are required and will ordinarily include the primary performer for the visit.
 
 ### 7.2 Reason modeling
