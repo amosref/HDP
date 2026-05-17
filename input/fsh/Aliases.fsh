@@ -14,6 +14,8 @@ Alias: $obs-cat =      http://terminology.hl7.org/CodeSystem/observation-categor
 
 // VSs
 Alias: $vs-info-buckets =  http://fhir.health.gov.il/ValueSet/il-hdp-information-buckets
+Alias: $vs-v3-confidentiality-classification = http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification
+Alias: $vs-il-core-sensitivity-labels = http://fhir.health.gov.il/ValueSet/il-core-sensitivity-labelsILCoreSensitivityLabels
 Alias: $vs-il-hdp-condition-code =  http://hdp.fhir.health.gov.il/ValueSet/il-hdp-condition-code
 Alias: $vs-observation-meta =  http://hdp.fhir.health.gov.il/ValueSet/il-hdp-observation-information-buckets
 Alias: $vs-observation-lab-meta =  http://hdp.fhir.health.gov.il/ValueSet/il-hdp-observation-lab-information-buckets

@@ -12,6 +12,7 @@ Description: "Child encounter representing a clinically coherent care segment or
 * obeys ilhdp-enc-period-start
 * obeys ilhdp-enc-finished-period
 * obeys ilhdp-enc-one-active-nursing-unit
+* obeys ilhdp-enc-ambulatory-class-participant
 
 * status ^comment = "Status of child encounters SHALL be harmonized with the status of parent encounter (e.g. - child encounter cannot be in-progress when parent encounter is finished, etc.)"
 * statusHistory ^comment = "חשוב למימוש. If status history is managed for Inpatient Care Segment encounters it SHOULD be reflected here."
@@ -29,8 +30,8 @@ Description: "Child encounter representing a clinically coherent care segment or
 
 * serviceType ^comment = "If there are no better options - SHOULD be inferred from the clinical type of the ward. For specialist consultation - if there are no better options infer from practitioner specialization or ward they are assigned to. SHOULD NOT change within a given segment encounter."
 
-* participant 1..*
-* participant ^comment = "Care segment encounter SHALL include all participating practitioners or practitioner roles directly involved in care during that segment."
+* participant 0..*
+* participant ^comment = "Care segment encounter SHOULD include all participating practitioners or practitioner roles directly involved in care during that segment. If class is ambulatory (AMB), at least one participant SHALL be present."
 
 * reasonCode[moh-reason-code] 0..0
 * hospitalization 0..0

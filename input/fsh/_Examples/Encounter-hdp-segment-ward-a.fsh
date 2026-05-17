@@ -74,14 +74,14 @@ Usage: #example
 * location[=].location.display = "Ward A Room 12 Bed 2"
 * location[=].status = #completed
 * location[=].period.start = "2024-11-28T15:30:00+02:00"
-* location[=].period.end = "2024-11-29T12:00:00+02:00"
+* location[=].period.end = "2024-11-30T09:00:00+02:00"
 * location[=].physicalType.coding[+].system = "http://terminology.hl7.org/CodeSystem/location-physical-type"
 * location[=].physicalType.coding[=].code = #bd
 * location[=].physicalType.coding[=].display = "Bed"
 * location[+].location.reference = "Location/hospital1-ward-b-room-05-bed-1"
 * location[=].location.display = "Ward B Room 05 Bed 1"
 * location[=].status = #completed
-* location[=].period.start = "2024-11-29T12:00:00+02:00"
+* location[=].period.start = "2024-11-30T09:00:00+02:00"
 * location[=].period.end = "2024-12-02T12:00:00+02:00"
 * location[=].physicalType.coding[+].system = "http://terminology.hl7.org/CodeSystem/location-physical-type"
 * location[=].physicalType.coding[=].code = #bd
