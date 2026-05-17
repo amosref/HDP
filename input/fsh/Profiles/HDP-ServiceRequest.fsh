@@ -18,10 +18,10 @@ Description: "Defines the ServiceRequest resource for HDP compliance."
 * reasonCode 1..1
 * priority 1..1
 * reasonReference 1..*
-* supportingInfo 1..*
+// * supportingInfo 1..*
 * occurrence[x] 1..1
 * note 1..*
-* text 1..1
+// * text 1..1
 
 * subject only Reference(ILHDPPatient or ILCoreGroup or ILHDPLocation)
 * encounter only Reference(ILCoreEncounter)

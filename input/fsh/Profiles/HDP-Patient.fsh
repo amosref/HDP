@@ -14,7 +14,7 @@ Description: "Patient profile for HDP"
 * meta.security[HDP].code = #patientDemographics (exactly)
 * meta.security[HDP].display = "דמוגרפיה" (exactly)
 * extension[hmo] 1..1
-* identifier obeys il-id-or-ppn
+// * identifier obeys il-id-or-ppn
 * name.given 1..*
 * name.family 1..1
 // * birthDate 1..1 // already 1..1

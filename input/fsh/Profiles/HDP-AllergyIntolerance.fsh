@@ -10,3 +10,4 @@ Description: "AllergyIntolerance profile for HDP"
 * meta 1..1
 * meta.security[HDP].system = $info-buckets (exactly)
 * meta.security[HDP].code = #allergiesAndIntolerances (exactly)
+* meta.security[HDP].display = "רגישויות" (exactly)
