@@ -17,4 +17,5 @@ Description: "AllergyIntolerance profile for HDP"
 * recorder 1..1
 * code 1..1
 * category 1..*
+* onset[x] 1..1
 * recordedDate 1..1
