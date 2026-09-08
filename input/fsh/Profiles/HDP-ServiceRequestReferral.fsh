@@ -36,12 +36,12 @@ Description: "Israel Health Data Portability (HDP) constraints on the ServiceReq
 * note MS
 
 // reference-type restrictions
-* subject only Reference(ILHDPPatient or ILCoreGroup or ILCoreDevice or ILHDPLocation)
-* encounter only Reference(ILCoreEncounter)
-* requester only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPPatient or ILHDPRelatedPerson or ILCoreDevice)
-* performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or ILHDPPatient or ILHDPRelatedPerson or ILCoreDevice)
+* subject only Reference(ILHDPPatient or ILCoreGroup or ILCoreDevice or ILHDPDevice or ILHDPLocation)
+* encounter only Reference(ILCoreEncounter or ILHDPEncounterHospitalization or ILHDPEncounterInpatientCareSegment or ILHDPEncounterCommunityHMOAmbulatory)
+* requester only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPPatient or ILHDPRelatedPerson or ILCoreDevice or ILHDPDevice)
+* performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or ILHDPPatient or ILHDPRelatedPerson or ILCoreDevice or ILHDPDevice)
 * reasonReference only Reference(ILHDPCondition or ILHDPObservation or ILHDPDiagnosticReport or ILHDPDocumentReference)
-* supportingInfo only Reference(ILHDPCondition or ILHDPObservation or ILHDPDocumentReference or ILHDPMedication or ILCoreDevice or ILCoreProcedure)
+* supportingInfo only Reference(ILHDPCondition or ILHDPObservation or ILHDPDocumentReference or ILHDPMedication or ILCoreDevice or ILHDPDevice or ILCoreProcedure)
 
 // smoking / pregnancy status — supporting info only, not the clinical source of truth
 * extension contains

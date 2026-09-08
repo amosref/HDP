@@ -24,7 +24,7 @@ Description: "Defines the ServiceRequest resource for HDP compliance."
 // * text 1..1
 
 * subject only Reference(ILHDPPatient or ILCoreGroup or ILCoreLocation or ILHDPLocation)
-* encounter only Reference(ILCoreEncounter)
+* encounter only Reference(ILCoreEncounter or ILHDPEncounterHospitalization or ILHDPEncounterInpatientCareSegment or ILHDPEncounterCommunityHMOAmbulatory)
 * requester only Reference(ILCorePractitioner or ILHDPPractitioner or ILCorePractitionerRole or ILHDPPractitionerRole or ILCoreOrganization or ILHDPOrganization or ILHDPPatient or ILCoreRelatedPerson or ILHDPRelatedPerson or ILCoreDevice or ILHDPDevice)
 * performer only Reference(ILCorePractitioner or ILHDPPractitioner or ILCorePractitionerRole or ILHDPPractitionerRole or ILCoreOrganization or ILHDPOrganization or ILCoreCareTeam or ILHDPCareTeam or ILHDPPatient or ILCoreRelatedPerson or ILHDPRelatedPerson or ILCoreDevice or ILHDPDevice)
 * reasonReference only Reference(ILCoreCondition or ILHDPCondition or ILCoreObservation or ILHDPObservation or ILCoreDiagnosticReport or ILHDPDiagnosticReport or ILCoreDocumentReference or ILHDPDocumentReference)

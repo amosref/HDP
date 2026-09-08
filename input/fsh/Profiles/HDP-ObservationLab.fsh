@@ -19,7 +19,7 @@ Description: "Observation Lab profile for HDP"
 * basedOn.identifier 1..1
 // * performer only Reference(ILHDPPractitioner or ILHDPPractitionerRole or ILHDPOrganization or ILHDPCareTeam or ILHDPPatient or ILCoreRelatedPerson or ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam)
 // * performer only Reference(ILHDPPractitioner or ILCorePractitioner or ILHDPOrganization or ILCoreOrganization)
-* encounter only Reference(ILCoreEncounter)
+* encounter only Reference(ILCoreEncounter or ILHDPEncounterHospitalization or ILHDPEncounterInpatientCareSegment or ILHDPEncounterCommunityHMOAmbulatory)
 * partOf only Reference(ILCoreMedicationAdministration or ILHDPMedicationAdministration or ILCoreMedicationStatement or ILHDPMedicationStatement or ILCoreMedicationDispense or ILHDPMedicationDispense or ILCoreImmunization or ILCoreImagingStudy)
 * hasMember only Reference(ILCoreObservation or ILHDPObservation or ILCoreQuestionnaireResponse or MolecularSequence)
 * derivedFrom only Reference(ILHDPDocumentReference or ILCoreDocumentReference or ILCoreImagingStudy or ILCoreMedia or ILCoreQuestionnaireResponse or ILCoreObservationLab or ILHDPObservationLab or ILCoreMolecularSequence)

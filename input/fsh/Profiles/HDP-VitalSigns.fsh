@@ -13,6 +13,6 @@ Description: "Vital Signs profile for HDP compliance."
 * meta.security[HDP].display = "מדדים" (exactly)
 * identifier 1..*
 * subject only Reference(ILHDPPatient)
-* encounter only Reference(ILCoreEncounter)
+* encounter only Reference(ILCoreEncounter or ILHDPEncounterHospitalization or ILHDPEncounterInpatientCareSegment or ILHDPEncounterCommunityHMOAmbulatory)
 * performer only Reference(ILCorePractitioner or ILHDPPractitioner or ILCorePractitionerRole or ILHDPPractitionerRole or ILCoreOrganization or ILHDPOrganization or ILCoreCareTeam or ILHDPCareTeam or ILHDPPatient or ILCoreRelatedPerson or ILHDPRelatedPerson)
 * device only Reference(ILCoreDevice or ILHDPDevice or DeviceMetric)
