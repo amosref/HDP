@@ -1,6 +1,6 @@
 Invariant: prac-ident-enc
 Description: "identifier must contain at least one member with either: 1.system = http://fhir.health.gov.il/identifier/encrypted-id-primary-moh; OR a system from PassportEncUri"
-Expression: "identifier.where(system.memberOf('http://fhir.health.gov.il/ValueSet/passport-enc-uri') or system='http://fhir.health.gov.il/identifier/encrypted-id-primary-moh').exists()"
+Expression: "identifier.where((system = 'http://fhir.health.gov.il/identifier/encrypted-id-primary-moh') or (system.memberOf('http://fhir.health.gov.il/ValueSet/passport-enc-uri'))).exists()"
 Severity: #error
 
 Invariant: prac-role-code-specialty 
@@ -22,6 +22,11 @@ Invariant: statuses-exist
 Description: "The elements clinicalStatus and verificationStatus SHOULD exist, if possible"
 Expression: "verificationStatus.exists() and clinicalStatus.exists()"
 Severity: #warning
+
+Invariant: ilhdp-allergy-category-required
+Description: "category must be present unless code.coding contains SNOMED CT 716186003 (No known allergy), or code.text is present with no code.coding.code values."
+Expression: "category.exists() or code.coding.where(system = 'http://snomed.info/sct' and code = '716186003').exists() or (code.text.exists() and code.coding.code.count() = 0)"
+Severity: #error
 
 Invariant: obs-lab-value-absent
 Description: "Either Observation.value or Observation.dataAbsentReason must be present, but not both."
@@ -92,3 +97,8 @@ Invariant: il-id-or-ppn
 Description: "The identifier SHOULD contain at least one of the following slices: il-id or ppn"
 Severity: #warning
 Expression: "identifier.where(system = 'http://fhir.health.gov.il/identifier/il-national-id').exists() or identifier.where(system.startsWith('http://hl7.org/fhir/sid/passport')).exists()"
+
+Invariant: il-dosage-dose-required-when-no-substeps
+Description: "If ext-sub-dosage-step extension is NOT present on Dosage, doseAndRate SHALL be present."
+Severity: #error
+Expression: "extension('http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').exists().not() implies doseAndRate.exists()"

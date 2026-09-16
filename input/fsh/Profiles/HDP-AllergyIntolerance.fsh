@@ -6,6 +6,7 @@ Description: "AllergyIntolerance profile for HDP"
 * obeys statuses-exist
 * insert ConformanceMetadata
 * obeys one-strong-identifier
+* obeys ilhdp-allergy-category-required
 * meta only ILHDPMeta
 * meta 1..1
 * meta.security[HDP].system = $info-buckets (exactly)
@@ -16,5 +17,5 @@ Description: "AllergyIntolerance profile for HDP"
 * patient 1..1
 * recorder 1..1
 * code 1..1
-* category 1..*
+* category 0..*
 * recordedDate 1..1
