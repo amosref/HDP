@@ -17,6 +17,7 @@ Description: "MedicationStatement profile for HDP"
 * subject 1..1
 * subject only Reference(ILHDPPatient)
 * dosage 0..*
+* dosage obeys il-dosage-dose-required-when-no-substeps
 * dosage.text 0..1
 * dosage.doseAndRate 0..*
 * dosage.doseAndRate obeys medication-dose-rate-1

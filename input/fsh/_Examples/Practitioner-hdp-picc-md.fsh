@@ -17,6 +17,8 @@ Usage: #example
 * identifier[enc-il-id].system = "http://fhir.health.gov.il/identifier/encrypted-id-primary-moh"
 * identifier[enc-il-id].value = "qR7z*&@2f"
 * identifier[enc-il-id].type = http://fhir.health.gov.il/cs/il-core-identifier-type#strong-id
+* identifier[+].system = "http://fhir.health.gov.il/identifier/encrypted-id-primary-moh"
+* identifier[=].value = "gH45*&@5a"
 
 * active = true
 * name[English].family = "Feldman"

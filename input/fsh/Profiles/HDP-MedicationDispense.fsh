@@ -22,9 +22,10 @@ Description: "MedicationDispense profile for HDP"
 * receiver only Reference(ILCorePractitioner or ILHDPPractitioner or ILHDPPatient)
 * substitution.responsibleParty only Reference(ILCorePractitioner or ILCorePractitionerRole or ILHDPPractitioner or ILHDPPractitionerRole)
 * dosageInstruction 1..*
+* dosageInstruction obeys il-dosage-dose-required-when-no-substeps
 // * dosageInstruction only ILHDPDosage
 * dosageInstruction.text 0..1
-* dosageInstruction.doseAndRate 1..*
+* dosageInstruction.doseAndRate 0..*
 * dosageInstruction.doseAndRate obeys medication-dose-rate-1
 * dosageInstruction.doseAndRate.dose[x] 0..1
 * dosageInstruction.doseAndRate.rate[x] 0..1
