@@ -17,4 +17,4 @@ template
 output
 validator_cli.jar
 .claude/settings.local.json
-validator_cli_output.*
+*validator_cli_output.*
