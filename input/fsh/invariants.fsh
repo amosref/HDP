@@ -23,6 +23,11 @@ Description: "The elements clinicalStatus and verificationStatus SHOULD exist, i
 Expression: "verificationStatus.exists() and clinicalStatus.exists()"
 Severity: #warning
 
+Invariant: allergy-category-required
+Description: "category must be present unless code has no coding or contains SNOMED CT code 716186003 (No known allergy)."
+Expression: "category.exists() or code.coding.empty() or code.coding.where(system = 'http://snomed.info/sct' and code = '716186003').exists()"
+Severity: #error
+
 Invariant: obs-lab-value-absent
 Description: "Either Observation.value or Observation.dataAbsentReason must be present, but not both."
 Expression: "(value.exists() xor dataAbsentReason.exists())"
