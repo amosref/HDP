@@ -1,6 +1,6 @@
 ValueSet: ILHDPDocumentTypes
 Id: il-hdp-document-types
-Title: "ILHDP Document Reference Types"
+Title: "ILHDP Document Types"
 Description: "A list of Document Type codes for IL-HDP"
 * insert ConformanceMetadata
 * ^url = $vs-hdp-document-types

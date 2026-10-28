@@ -29,7 +29,7 @@ Description: "Example referral ServiceRequest demonstrating the fixed meta.secur
 * requester = Reference(PractitionerRole/gp)
 * performer[0] = Reference(Organization/HMO1)
 
-* reasonReference[0] = Reference(ILHDPConditionExample1)
+* reasonReference[0] = Reference(Condition/hdp-pneumonia)
 
 * patientInstruction = "יש להגיע בצום של 8 שעות לפני הבדיקה."
 * note[0].text = "המטופל מבקש תיאום מראש בשל מגבלת ניידות."
